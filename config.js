@@ -48,7 +48,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-    url: 'http://ghost.hgaard.dk',
+    url: 'http://blog.hgaard.dk',
     mail: {
       transport: 'SMTP',
       host: 'smtp.mandrillapp.com',
