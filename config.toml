@@ -1,4 +1,4 @@
-baseurl = "http://hgaard.github.io/blog.hgaard.dk/"
+baseurl = "http://hugo.hgaard.dk/"
 languageCode = "en-US"
 title = "Bearded Code Monkey"
 themesDir = "themes"
