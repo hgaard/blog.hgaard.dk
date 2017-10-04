@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jakob Hojgaard">
+<meta name="description" content="Describe your website">
+<meta name="generator" content="Hugo 0.27.1" />
+<title>Getting started with git in Visual Studio</title>
+<link rel="shortcut icon" href="http://hgaard.github.io/blog.hgaard.dk/images/favicon.ico">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/style.css">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/monosocialiconsfont.css">
+
+
+
+<link href="http://hgaard.github.io/blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="Bearded Code Monkey" />
+
+
+<meta property="og:title" content="Getting started with git in Visual Studio" />
+<meta property="og:description" content="The last year or so at Schultz we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hgaard.github.io/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Getting started with git in Visual Studio">
+<meta itemprop="description" content="The last year or so at Schultz we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead.">
+
+
+
+<meta itemprop="wordCount" content="313">
+
+
+
+<meta itemprop="keywords" content="Visual Studio,git," />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Getting started with git in Visual Studio"/>
+<meta name="twitter:description" content="The last year or so at Schultz we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead."/>
+<meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://hgaard.github.io/blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://hgaard.github.io/blog.hgaard.dk/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Getting started with git in Visual Studio</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/visual-studio">Visual Studio</a>
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/git">git</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p>The last year or so at <a href="http://schultz.dk">Schultz</a> we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead.</p>
+
+<h3 id="getting-git-under-your-skin">Getting git under your skin</h3>
+
+<p>First of all i think it is extremely important understand the paradigm of git, and for most of my fellow .net developers the difference between a centralized source control system - like TFS, and a distributed like git. I think these resource are a great place to start:</p>
+
+<ul>
+<li><a href="https://www.atlassian.com/git">https://www.atlassian.com/git</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+</ul>
+
+<p>For a litle deeper insight, have a look at this one:</p>
+
+<ul>
+<li><a href="http://think-like-a-git.net/">http://think-like-a-git.net/</a></li>
+</ul>
+
+<h3 id="try-it-out">Try it out</h3>
+
+<p>With a bit of background, just go ahead and get typing! I really recommend starting at the console, and Visual Studio will install the git client for you. But since playing around with git requires changing stuff in files, it can be a lot easier to practice in a more controlled environment. These two resources are great for that:</p>
+
+<ul>
+<li><a href="http://www.wei-wang.com/ExplainGitWithD3/">http://www.wei-wang.com/ExplainGitWithD3/</a></li>
+<li><a href="http://pcottle.github.io/learnGitBranching/">http://pcottle.github.io/learnGitBranching/</a></li>
+</ul>
+
+<h3 id="using-git-form-visual-studio">Using git form Visual Studio</h3>
+
+<p>Since Visual Studio 2013 the git source control provider has been part of the installation, so no extra installs necessary.</p>
+
+<p>For detailed info on git in Visual Studio, MSDN has a great tutorial here: <a href="http://msdn.microsoft.com/en-us/library/hh850437.aspx">http://msdn.microsoft.com/en-us/library/hh850437.aspx</a></p>
+
+<h3 id="a-few-caveats">A few caveats</h3>
+
+<p>Even though most tasks can be accomplished from Visual Studio, I think it is necessary to get familiar with other tools like <a href="http://www.sourcetreeapp.com/">SourceTree</a> or <a href="https://chocolatey.org/packages/poshgit">PoshGit</a>, which also just might make you more productive.
+Further there are some very useful features of git like below are not possible form Visual Studio:</p>
+
+<ul>
+<li>rebase</li>
+<li>stash</li>
+<li>cherry-pick</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLttwD7NyH3omQLyVtan0CFOX_UWItX_yG">Git casts</a></li>
+<li><a href="http://www.sourcetreeapp.com/">SourceTree</a></li>
+<li><a href="https://chocolatey.org/packages?q=git">Git tools on chocolatey</a></li>
+<li><a href="http://blog.hgaard.dk/setting-up-a-difftool-for-git-on-windows/">Setting up a merge tool</a></li>
+</ul>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/hgaard">
+    <img class="avatar" src="http://hgaard.github.io/blog.hgaard.dk/images/avatar.png">
+    <div>
+        <span class="dark">Jakob Hojgaard</span>
+        <span>I&#39;m an blogger.</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fhgaard.github.io%2fblog.hgaard.dk%2fblog%2fgetting-started-with-git-in-visual-studio%2f - Getting%20started%20with%20git%20in%20Visual%20Studio by @hgaard"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/">Doing stuff with RethinkDB<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/">Finding big files in a git repo on windows<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/hello-blog/">Hello blog<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/">Managing external users with Azure AD B2C<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/hgaard">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/hgaard">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Jakob Hojgaard
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/main.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

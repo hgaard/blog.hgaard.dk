@@ -3,152 +3,152 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hgaard.github.io/tags/authentication/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/authentication/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/authentication/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/authentication/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/azure/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/azure/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/azure/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/azure/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/azure-ad/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/azure-ad/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/azure-ad/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/azure-ad-b2c/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/azure-ad-b2c/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/azure-ad-b2c/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad-b2c/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/doinng-stuff-with-rethinkdb/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</loc>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/finding-big-files-in-a-git-repo-on-windows/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</loc>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/getting-started/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/getting-started/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/getting-started/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/getting-started/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/getting-started-with-git-in-visual-studio/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</loc>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/git/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/git/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/git/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/git/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/hello-blog/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/hello-blog/</loc>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/blog/managing-external-users-with-azure-ad-b2c/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</loc>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/nosql/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/nosql/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/nosql/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/nosql/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/openidconnect/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/openidconnect/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/openidconnect/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/openidconnect/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/realtime/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/realtime/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/realtime/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/realtime/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/rethinkdb/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/rethinkdb/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/rethinkdb/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/rethinkdb/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/tags/visual-studio/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/tags/visual-studio/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hgaard.github.io/categories/visual-studio/</loc>
+    <loc>http://hgaard.github.io/blog.hgaard.dk/categories/visual-studio/</loc>
     <priority>0</priority>
   </url>
   
