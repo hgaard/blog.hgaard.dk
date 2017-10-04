@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["Azure", "Azure AD", "Azure AD B2C", "OpenIdConnect", "Authentication"]
-date = 0001-01-01T00:00:00Z
+date = 2016-04-21T00:00:00Z
 description = ""
 draft = false
 image = "/images/2016/04/basics_of_auth_in_aad-1.png"

@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["Visual Studio", "git"]
-date = 0001-01-01T00:00:00Z
+date = 2015-01-05T00:00:00Z
 description = ""
 draft = false
 slug = "getting-started-with-git-in-visual-studio"

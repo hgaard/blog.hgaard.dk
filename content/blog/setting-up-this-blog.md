@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["Getting Started", "ghost", "blogg"]
-date = 0001-01-01T12:00:00Z
+date = 2015-11-12T12:00:00Z
 description = ""
 draft = false
 image = "/images/2015/11/20151110_223603558_iOS-copy-1.jpg"

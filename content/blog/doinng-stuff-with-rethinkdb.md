@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["RethinkDB", "NoSql", "Getting Started", "Realtime"]
-date = 0001-01-01T00:00:00Z
+date = 2016-08-04T00:00:00Z
 description = ""
 draft = false
 image = "/images/2016/03/Rethink-Logo-1.png"

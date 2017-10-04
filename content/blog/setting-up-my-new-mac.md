@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["Boot Camp", "OS X", "Windows 8.1"]
-date = 0001-01-01T00:00:00Z
+date = 2014-11-17T00:00:00Z
 description = ""
 draft = false
 slug = "setting-up-my-new-mac"
