@@ -1,14 +1,17 @@
 +++
 author = "Jakob Højgaard"
 categories = ["Getting Started", "ghost", "blogg"]
-date = 0001-01-01T00:00:00Z
+date = 0001-01-01T12:00:00Z
 description = ""
 draft = false
 image = "/images/2015/11/20151110_223603558_iOS-copy-1.jpg"
 slug = "setting-up-this-blog"
 tags = ["Getting Started", "ghost", "blogg"]
 title = "Setting up this blog"
-
+aliases = [
+    "/blog/setting-up-this-blog/",
+    "/setting-up-this-blog/"
+]
 +++
 
 # Introduction

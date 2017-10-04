@@ -1,6 +1,6 @@
 +++
 author = "Jakob Højgaard"
-date = 2014-10-01T00:00:00Z
+date = 2014-10-01T12:00:00Z
 description = ""
 draft = false
 slug = "setting-up-a-difftool-for-git-on-windows"

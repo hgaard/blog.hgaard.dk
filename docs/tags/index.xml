@@ -6,6 +6,7 @@
     <description>Recent content in Tags on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Mon, 01 Jan 0001 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://hgaard.github.io/blog.hgaard.dk/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -49,7 +50,7 @@
     <item>
       <title>Blogg</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/tags/blogg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
       <guid>http://hgaard.github.io/blog.hgaard.dk/tags/blogg/</guid>
       <description></description>
@@ -67,7 +68,7 @@
     <item>
       <title>Getting Started</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/tags/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
       <guid>http://hgaard.github.io/blog.hgaard.dk/tags/getting-started/</guid>
       <description></description>
@@ -76,7 +77,7 @@
     <item>
       <title>Ghost</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/tags/ghost/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
       <guid>http://hgaard.github.io/blog.hgaard.dk/tags/ghost/</guid>
       <description></description>

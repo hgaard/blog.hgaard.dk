@@ -22,6 +22,16 @@ After the migration to the new git repository it turned out that the repository 
     </item>
     
     <item>
+      <title>Setting up a difftool for git on windows</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</link>
+      <pubDate>Wed, 01 Oct 2014 12:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</guid>
+      <description>Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
+Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/about/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
@@ -41,13 +51,14 @@ I&amp;rsquo;m starting this blog because I want to archive some my thoughts and 
     </item>
     
     <item>
-      <title>Setting up a difftool for git on windows</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</link>
-      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <title>Setting up this blog</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</guid>
-      <description>Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
-Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools.</description>
+      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</guid>
+      <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
     </item>
     
     <item>
@@ -85,17 +96,6 @@ Installation I installed with Chocolatey (remember to run cmd og PowerShell as a
       <guid>http://hgaard.github.io/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</guid>
       <description>The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
 ###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it.</description>
-    </item>
-    
-    <item>
-      <title>Setting up this blog</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</guid>
-      <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
-Anyway here goes:
-I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
     </item>
     
   </channel>
