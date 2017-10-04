@@ -1,6 +1,6 @@
 +++
 author = "Jakob Højgaard"
-date = 0001-01-01T00:00:00Z
+date = 2014-10-30T00:00:00Z
 description = ""
 draft = false
 slug = "finding-big-files-in-a-git-repo-on-windows"

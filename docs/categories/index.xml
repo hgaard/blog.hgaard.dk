@@ -47,11 +47,38 @@
     </item>
     
     <item>
+      <title>Blogg</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/categories/blogg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/blogg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boot Camp</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/categories/boot-camp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/boot-camp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/categories/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://hgaard.github.io/blog.hgaard.dk/categories/getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ghost</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/categories/ghost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/ghost/</guid>
       <description></description>
     </item>
     
@@ -83,6 +110,15 @@
     </item>
     
     <item>
+      <title>Os X</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/categories/os-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/os-x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Realtime</title>
       <link>http://hgaard.github.io/blog.hgaard.dk/categories/realtime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,6 +142,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://hgaard.github.io/blog.hgaard.dk/categories/visual-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/categories/windows-8.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/windows-8.1/</guid>
       <description></description>
     </item>
     

@@ -1,6 +1,6 @@
 +++
 author = "Jakob Højgaard"
-date = 0001-01-01T00:00:00Z
+date = 2014-10-01T00:00:00Z
 description = ""
 draft = false
 image = "http://res.cloudinary.com/hnlbm8xxk/image/upload/v1414962408/blog-cover5_gkiv8s.jpg"

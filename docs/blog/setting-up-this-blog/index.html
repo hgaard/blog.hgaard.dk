@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jakob Højgaard">
+<meta name="description" content="Describe your website">
+<meta name="generator" content="Hugo 0.27.1" />
+<title>Setting up this blog</title>
+<link rel="shortcut icon" href="http://hgaard.github.io/blog.hgaard.dk/images/favicon.ico">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/style.css">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/monosocialiconsfont.css">
+
+
+
+<link href="http://hgaard.github.io/blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="Bearded Code Monkey" />
+
+
+<meta property="og:title" content="Setting up this blog" />
+<meta property="og:description" content="Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Setting up this blog">
+<meta itemprop="description" content="Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.">
+
+
+
+<meta itemprop="wordCount" content="673">
+
+
+
+<meta itemprop="keywords" content="Getting Started,ghost,blogg," />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Setting up this blog"/>
+<meta name="twitter:description" content="Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic."/>
+<meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://hgaard.github.io/blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://hgaard.github.io/blog.hgaard.dk/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Setting up this blog</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/getting-started">Getting Started</a>
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/ghost">ghost</a>
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/blogg">blogg</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h1 id="introduction">Introduction</h1>
+
+<p>I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.</p>
+
+<p>Anyway here goes:</p>
+
+<p>I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic. How ever i like to tinker and a Pluralsight course - <a href="https://app.pluralsight.com/library/courses/master-domain/table-of-contents">Mastering Your Own Domain</a> by Rob Conery - inspired me to be more in control. For instructions on how to run Ghost on Heroku I used <a href="http://www.therightcode.net/deploy-ghost-to-heroku-for-free/">this</a> guide by <a href="http://www.therightcode.net/">Greg Bergé</a>.</p>
+
+<h1 id="the-basics">The basics</h1>
+
+<p>The blogging software is <a href="http://tryghost.org">Ghost</a>, which is based in node and I use Postgres as datastore and have an nginx server running in front of node. The whole thing runs on a Ubuntu 15.10 server on <a href="http://digitalocean.com">DigitalOcean</a>.</p>
+
+<h1 id="the-how">The how</h1>
+
+<p>The Pluralsight course mentioned earlier basically describes how to setup Ghost on a new server droplet on DigitalOcean. So for detailed description have a look at that.</p>
+
+<p>##Setting up the server
+<strong>Create droplet</strong></p>
+
+<p>Head over to Digital, create an account if you don&rsquo;t already have one and then create a new virtual machine which at Digital Ocean is called a Droplet. I use the smallest instance they provide with Ubuntu 15.10. Remember to check the backup checkbox, it&rsquo;s $1 more a month but having a backup is nice. Last thing; add a SSH key for convenience when logging on to the machine. When the machine is ready (usually takes around 1 minute) ssh into it to get working.</p>
+
+<p><strong>Setup a user</strong></p>
+
+<pre><code>adduser ghost
+visudo       # And then assign super user privileges to ghost user
+#Add ssh key to the new user (Install ssh-copy-id with homebrew first
+ssh-copy-id &lt;username&gt;@&lt;host&gt; 
+</code></pre>
+
+<p><strong>Now install all the necessary software</strong></p>
+
+<p><strong>Install nginx</strong></p>
+
+<pre><code>sudo apt-get install nginx -y
+</code></pre>
+
+<p><strong>Intstall Postgres and dev lib</strong></p>
+
+<pre><code>sudo apt-get install postgresql libpq-dev
+</code></pre>
+
+<p><strong>Add ghost user to postgress</strong></p>
+
+<pre><code>sudo su postgres # Switch to postgress user
+psql             # Open terminal to postgres
+create database &lt;ghost-db-name&gt;;
+create role &lt;db-user&gt; with password '&lt;uder-pw&gt;' LOGIN; #Create role and grant login
+alter database &lt;ghost-db-name&gt; owner to &lt;db-user&gt;; #transfer ownership
+</code></pre>
+
+<p><strong>Install Node</strong></p>
+
+<pre><code>sudo apt-get install curl # Install curl to obtain node
+curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install --yes nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node # Add symlink
+</code></pre>
+
+<p><strong>Install Ghost</strong></p>
+
+<pre><code>wget https://ghost.org/zip/ghost-0.7.1.zip # Version 0.7.1 is latest at the time of writing
+unzip ghost-0.7.1.zip -d &lt;folde-to-run-ghost-from&gt;
+</code></pre>
+
+<p><strong>Prepare and start Ghost</strong></p>
+
+<pre><code>npm install --production
+npm start
+</code></pre>
+
+<p>Now this will starts ghost on the server running the default configuration, so we&rsquo;ll need to edit the config.js in the root of the ghost installation to user Postgres instead of SQLite and for it to know the blog root url. The configuration should be changed to something like this:</p>
+
+<pre><code>  production: {
+    url: '&lt;blog-url&gt;',
+    database: {
+      client: 'postgres',
+      connection: {
+          host     : 'localhost',
+          user     : '&lt;db-user&gt;',
+          password : '&lt;user-pw&gt;',
+          database : '&lt;db-name&gt;',
+          charset  : 'utf8'
+      },
+      debug: false
+  },
+</code></pre>
+
+<p>Since I would like to hand over the webserver part to nginx (and have it runnign on port 80) i need to configure it to proxy to node. There are different ways to do so and since I&rsquo;m no nginx wizard I chose the one I have used before.</p>
+
+<p><strong>Add config file to nginx</strong></p>
+
+<pre><code>sudo touch /etc/nginx/sites-available/ghost
+sudo vim /etc/nginx/sites-available/ghost
+</code></pre>
+
+<p><strong>Configure proxying in nginx</strong></p>
+
+<pre><code>server {
+    listen 80;
+    server_name your_domain.tld;
+    location / {
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   Host      $http_host;
+        proxy_pass         http://127.0.0.1:2368;
+    }
+}
+</code></pre>
+
+<p><strong>Symlink to sites-enabled and restart nginx</strong></p>
+
+<pre><code>sudo ln -s /etc/nginx/sites-available/ghost /etc/nginx/sites-enabled/ghost
+sudo service nginx restart
+</code></pre>
+
+<p><strong>Keep ghost up and running with pm2</strong></p>
+
+<pre><code>sudo npm install pm2 -g     # Install
+pm2 startup                 # Ensure pm2 starts the app in system startup
+NODE_ENV=production pm2 start index.js # Startup production instance
+</code></pre>
+
+<h2 id="that-s-it">That&rsquo;s it</h2>
+
+<p>That concludes my basic setup of this blog. Next up:</p>
+
+<ul>
+<li>Adding comments with Discus and insights with Google Analytics</li>
+<li>Setting up deployment with git</li>
+<li>Running and maintaining a Ghost blog with Docker</li>
+</ul>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/hgaard">
+    <img class="avatar" src="http://hgaard.github.io/blog.hgaard.dk/images/avatar.png">
+    <div>
+        <span class="dark">Jakob Højgaard</span>
+        <span>Code and things releated</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fhgaard.github.io%2fblog.hgaard.dk%2fblog%2fsetting-up-this-blog%2f - Setting%20up%20this%20blog by @hgaard"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hgaard" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/">Finding big files in a git repo on windows<aside class="dates">Oct 30 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/hello-blog/">Hello blog<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/">Setting up a difftool for git on windows<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/">Doing stuff with RethinkDB<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/">Getting started with git in Visual Studio<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/setting-up-my-new-mac/">Installing Windows 8.1 on my mac<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/">Managing external users with Azure AD B2C<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/hgaard">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/hgaard">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Jakob Højgaard
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/main.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jakob Højgaard">
+<meta name="description" content="Describe your website">
+<meta name="generator" content="Hugo 0.27.1" />
+<title>Installing Windows 8.1 on my mac</title>
+<link rel="shortcut icon" href="http://hgaard.github.io/blog.hgaard.dk/images/favicon.ico">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/style.css">
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="http://hgaard.github.io/blog.hgaard.dk/css/monosocialiconsfont.css">
+
+
+
+<link href="http://hgaard.github.io/blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="Bearded Code Monkey" />
+
+
+<meta property="og:title" content="Installing Windows 8.1 on my mac" />
+<meta property="og:description" content="I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-my-new-mac/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Installing Windows 8.1 on my mac">
+<meta itemprop="description" content="I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record.">
+
+
+
+<meta itemprop="wordCount" content="689">
+
+
+
+<meta itemprop="keywords" content="Boot Camp,OS X,Windows 8.1," />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Installing Windows 8.1 on my mac"/>
+<meta name="twitter:description" content="I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record."/>
+<meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://hgaard.github.io/blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://hgaard.github.io/blog.hgaard.dk/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Installing Windows 8.1 on my mac</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/boot-camp">Boot Camp</a>
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/os-x">OS X</a>
+            
+                <a href="http://hgaard.github.io/blog.hgaard.dk/tags/windows-8.1">Windows 8.1</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p>I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record. I popped a message box stating that &ldquo;Could not update the boot configuration&rdquo;. No way to continue!</p>
+
+<p>After quite a bit og googling and reading I found that I found a working solution <a href="https://discussions.apple.com/thread/5474320?start=585&amp;tstart=0">here</a> (on page 40!). It&rsquo;s posted by a guy called <strong>KNNSpeed</strong>. For convenience i&rsquo;ll republish the solution here:</p>
+
+<blockquote>
+<p>1) Using an .iso of Windows 8.1 I bought from the Microsoft Online Store, I copied the .iso to my rMBP and pointed Bootcamp to it to make the USB installer. The image created is slightly over 4GB, so it&rsquo;s important to use an 8GB flashdrive. There have been reports of issues caused by using 4GB flashdrives, so 8GB or larger is the way to go.</p>
+
+<p>2) After letting the Boot Camp Assistant do its thing (I personally use a <sup>50</sup>&frasl;<sub>50</sub> split, but more importantly I checked all 3 checkboxes) and entering my password to install the helper tool (if you don&rsquo;t use a password you probably won&rsquo;t see the helper tool prompt), I rebooted and went right into the EFI Boot option in the boot manager (the hold-down-ALT-at-bootup menu).</p>
+
+<p>3) In Windows 8.1&rsquo;s setup, I got an error about installing over the BOOTCAMP partition. No problem, if we&rsquo;re installing Windows8.1 in native EFI mode, we can&rsquo;t use a single partition anyway since Windows needs to make an extra MSR partition. It can&rsquo;t do that when BOOTCAMP fills up all the empty space! Solution: delete that BOOTCAMP partition right there in Windows setup, and click &ldquo;New.&rdquo; You should be able to make an NTFS partition that will fit right into the empty space you just made, and you&rsquo;ll know you&rsquo;re on the right track because there&rsquo;ll be a second partition labelled MSR that gets created, too.</p>
+
+<p>4) Continue to install Windows as normal in the NTFS partition you just made (the non-MSR one). This is why I used the USB method; DVDs are so slow when doing Windows setup. Anyways, you should get the classic &ldquo;Could not update the boot configuration&rdquo; error at the end. DON&rsquo;T PANIC, the next step fixes that.</p>
+
+<p>5) Click OK or Continue or whatever it says (it&rsquo;s been a while), and wait for your MacBook Pro to reboot, and go to the ALT menu. Now turn off your computer (or boot into OS X and shut it down, whatever&ndash;just turn it off without doing anything), turn it back on and do a PRAM/NVRAM reset (Hold Command+Option+P+R until you hear the chime play a second time), and go back to the ALT menu. Try not to miss the menu and boot into OS X, since I don&rsquo;t know if that&rsquo;ll mess anything up (it might, and you&rsquo;ll have to NVRAM reset again). Go right back into EFI Boot and proceed with Windows setup as normal.</p>
+
+<p>6) Windows should install with no errors, and when you reboot you now need to go right into the &ldquo;Windows&rdquo; drive in the ALT boot menu, as you&rsquo;re done with booting from the flashdrive. Also, it&rsquo;s OK if you go into OS X by accident now&ndash;just don&rsquo;t remove the flashdrive yet. If Windows reboots during this part of the installation, just use the ALT boot menu to go back into the Windows drive (remember: this isn&rsquo;t the &ldquo;Windows&rdquo; flashdrive icon&ndash;it&rsquo;s the Windows hard drive icon).</p>
+
+<p>7) Once Windows is done installing, it&rsquo;ll ask you to install the Bootcamp drivers. Go ahead and do that and reboot into Windows. Now go into &ldquo;This PC&rdquo; or &ldquo;Computer&rdquo; or whatever Microsoft renamed &ldquo;My Computer&rdquo; to and run &ldquo;Setup.exe&rdquo; from the flashdrive&rsquo;s WindowsSupport folder to install the Bootcamp drivers again. Apparently the setup that runs earlier misses a few things for some reason.</p>
+</blockquote>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/hgaard">
+    <img class="avatar" src="http://hgaard.github.io/blog.hgaard.dk/images/avatar.png">
+    <div>
+        <span class="dark">Jakob Højgaard</span>
+        <span>Code and things releated</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fhgaard.github.io%2fblog.hgaard.dk%2fblog%2fsetting-up-my-new-mac%2f - Installing%20Windows%208.1%20on%20my%20mac by @hgaard"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hgaard" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/">Finding big files in a git repo on windows<aside class="dates">Oct 30 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/hello-blog/">Hello blog<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/">Setting up a difftool for git on windows<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/">Doing stuff with RethinkDB<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/">Getting started with git in Visual Studio<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/">Managing external users with Azure AD B2C<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/blog.hgaard.dk/blog/setting-up-this-blog/">Setting up this blog<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/hgaard">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/hgaard">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Jakob Højgaard
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/main.js"></script>
+<script src="http://hgaard.github.io/blog.hgaard.dk/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

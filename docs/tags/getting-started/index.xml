@@ -19,5 +19,16 @@
       <description>I recently started a new job. Actually I moved from Copenhagen to Brisbane, Australia with my whole family, just to try living and working in a different country - and of course to give our 3 kids and ourselves a great experience/ adventure. Anyway, I got a job in the Australian consultancy Readify and one of the perks there is PD or Professional Development for up to 20 days a year.</description>
     </item>
     
+    <item>
+      <title>Setting up this blog</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</guid>
+      <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
+    </item>
+    
   </channel>
 </rss>

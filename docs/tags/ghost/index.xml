@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghost on Bearded Code Monkey</title>
+    <link>http://hgaard.github.io/blog.hgaard.dk/tags/ghost/</link>
+    <description>Recent content in Ghost on Bearded Code Monkey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="http://hgaard.github.io/blog.hgaard.dk/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up this blog</title>
+      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</guid>
+      <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
+Anyway here goes:
+I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
+    </item>
+    
+  </channel>
+</rss>

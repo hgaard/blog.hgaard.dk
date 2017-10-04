@@ -7,13 +7,13 @@ theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
-disqusShortname = ""
+disqusShortname = "hgaard"
 publishDir = "docs"
 
 [params]
-	name = "Jakob Hojgaard"
+	name = "Jakob Højgaard"
 	description = "Describe your website"
-	bio = "Blogger & Programmer"
+	bio = "The Bearded Code Monkey"
 	# Enter optionally your twitter account
 	twitter = "hgaard"
 	enableRSS = true
@@ -35,7 +35,7 @@ publishDir = "docs"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I'm an blogger."
+	aboutAuthor = "Code and things releated"
 	tweet = ""
 	share = ""
 	# 404 page
