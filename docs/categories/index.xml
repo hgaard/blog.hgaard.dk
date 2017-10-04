@@ -2,156 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Bearded Code Monkey</title>
-    <link>http://hgaard.github.io/blog.hgaard.dk/categories/</link>
+    <link>http://hugo.hgaard.dk/categories/</link>
     <description>Recent content in Categories on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 01 Jan 0001 12:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hgaard.github.io/blog.hgaard.dk/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hugo.hgaard.dk/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authentication</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/authentication/</link>
+      <link>http://hugo.hgaard.dk/categories/authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/authentication/</guid>
+      <guid>http://hugo.hgaard.dk/categories/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/azure/</link>
+      <link>http://hugo.hgaard.dk/categories/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/azure/</guid>
+      <guid>http://hugo.hgaard.dk/categories/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure Ad</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad/</link>
+      <link>http://hugo.hgaard.dk/categories/azure-ad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad/</guid>
+      <guid>http://hugo.hgaard.dk/categories/azure-ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure Ad B2c</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad-b2c/</link>
+      <link>http://hugo.hgaard.dk/categories/azure-ad-b2c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/azure-ad-b2c/</guid>
+      <guid>http://hugo.hgaard.dk/categories/azure-ad-b2c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogg</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/blogg/</link>
+      <link>http://hugo.hgaard.dk/categories/blogg/</link>
       <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/blogg/</guid>
+      <guid>http://hugo.hgaard.dk/categories/blogg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Boot Camp</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/boot-camp/</link>
+      <link>http://hugo.hgaard.dk/categories/boot-camp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/boot-camp/</guid>
+      <guid>http://hugo.hgaard.dk/categories/boot-camp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/getting-started/</link>
+      <link>http://hugo.hgaard.dk/categories/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/getting-started/</guid>
+      <guid>http://hugo.hgaard.dk/categories/getting-started/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ghost</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/ghost/</link>
+      <link>http://hugo.hgaard.dk/categories/ghost/</link>
       <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/ghost/</guid>
+      <guid>http://hugo.hgaard.dk/categories/ghost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/git/</link>
+      <link>http://hugo.hgaard.dk/categories/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/git/</guid>
+      <guid>http://hugo.hgaard.dk/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nosql</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/nosql/</link>
+      <link>http://hugo.hgaard.dk/categories/nosql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/nosql/</guid>
+      <guid>http://hugo.hgaard.dk/categories/nosql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openidconnect</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/openidconnect/</link>
+      <link>http://hugo.hgaard.dk/categories/openidconnect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/openidconnect/</guid>
+      <guid>http://hugo.hgaard.dk/categories/openidconnect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Os X</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/os-x/</link>
+      <link>http://hugo.hgaard.dk/categories/os-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/os-x/</guid>
+      <guid>http://hugo.hgaard.dk/categories/os-x/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Realtime</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/realtime/</link>
+      <link>http://hugo.hgaard.dk/categories/realtime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/realtime/</guid>
+      <guid>http://hugo.hgaard.dk/categories/realtime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rethinkdb</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/rethinkdb/</link>
+      <link>http://hugo.hgaard.dk/categories/rethinkdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/rethinkdb/</guid>
+      <guid>http://hugo.hgaard.dk/categories/rethinkdb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Studio</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/visual-studio/</link>
+      <link>http://hugo.hgaard.dk/categories/visual-studio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/visual-studio/</guid>
+      <guid>http://hugo.hgaard.dk/categories/visual-studio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows 8.1</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/categories/windows-8.1/</link>
+      <link>http://hugo.hgaard.dk/categories/windows-8.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/categories/windows-8.1/</guid>
+      <guid>http://hugo.hgaard.dk/categories/windows-8.1/</guid>
       <description></description>
     </item>
     

@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Bearded Code Monkey</title>
-    <link>http://hgaard.github.io/blog.hgaard.dk/blog/</link>
+    <link>http://hugo.hgaard.dk/blog/</link>
     <description>Recent content in Blogs on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hgaard.github.io/blog.hgaard.dk/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hugo.hgaard.dk/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Finding big files in a git repo on windows</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</link>
+      <link>http://hugo.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</guid>
+      <guid>http://hugo.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</guid>
       <description>I recently joined a project that had been working on a product for a few years already. The team had used TFS for source control until just a few weeks before I joined. Because of external circumstances the team had decided to migrate the complete source tree to git (still hosted on TFS though).
 After the migration to the new git repository it turned out that the repository was quite big, to more precise it was around 1,2 GB.</description>
     </item>
     
     <item>
       <title>Setting up a difftool for git on windows</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</link>
+      <link>http://hugo.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</link>
       <pubDate>Wed, 01 Oct 2014 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</guid>
+      <guid>http://hugo.hgaard.dk/blog/setting-up-a-difftool-for-git-on-windows/</guid>
       <description>Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
 Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools.</description>
     </item>
     
     <item>
       <title>Hello blog</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/hello-blog/</link>
+      <link>http://hugo.hgaard.dk/blog/hello-blog/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/hello-blog/</guid>
+      <guid>http://hugo.hgaard.dk/blog/hello-blog/</guid>
       <description>This is an introduction post! Oh well I guess one can&amp;rsquo;t stat a blog without some kind of introduction. I&amp;rsquo;m software developer, a husband, a dad and a lot of other stuff. I really enjoy working in technology and I truly get thrilled when diving into new shiny languages, frameworks and tools.
 I&amp;rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later.</description>
     </item>
     
     <item>
       <title>Setting up this blog</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</link>
+      <link>http://hugo.hgaard.dk/blog/setting-up-this-blog/</link>
       <pubDate>Mon, 01 Jan 0001 12:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-this-blog/</guid>
+      <guid>http://hugo.hgaard.dk/blog/setting-up-this-blog/</guid>
       <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
 Anyway here goes:
 I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
@@ -54,37 +54,37 @@ I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web ap
     
     <item>
       <title>Doing stuff with RethinkDB</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</link>
+      <link>http://hugo.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</guid>
+      <guid>http://hugo.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</guid>
       <description>I recently started a new job. Actually I moved from Copenhagen to Brisbane, Australia with my whole family, just to try living and working in a different country - and of course to give our 3 kids and ourselves a great experience/ adventure. Anyway, I got a job in the Australian consultancy Readify and one of the perks there is PD or Professional Development for up to 20 days a year.</description>
     </item>
     
     <item>
       <title>Getting started with git in Visual Studio</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</link>
+      <link>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</guid>
+      <guid>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</guid>
       <description>The last year or so at Schultz we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead.</description>
     </item>
     
     <item>
       <title>Installing Windows 8.1 on my mac</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-my-new-mac/</link>
+      <link>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/setting-up-my-new-mac/</guid>
+      <guid>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</guid>
       <description>I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&amp;rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record.</description>
     </item>
     
     <item>
       <title>Managing external users with Azure AD B2C</title>
-      <link>http://hgaard.github.io/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</link>
+      <link>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hgaard.github.io/blog.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</guid>
+      <guid>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</guid>
       <description>The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
 ###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it.</description>
     </item>
