@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://hugo.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo.hgaard.dk/blog/setting-up-this-blog/</loc>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hugo.hgaard.dk/blog/finding-big-files-in-a-git-repo-on-windows/</loc>
     <lastmod>2014-10-30T00:00:00+00:00</lastmod>
   </url>
@@ -23,213 +48,218 @@
   </url>
   
   <url>
-    <loc>http://hugo.hgaard.dk/blog/setting-up-this-blog/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hugo.hgaard.dk/tags/authentication/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/authentication/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/azure/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/azure/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/azure-ad/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/azure-ad/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/azure-ad-b2c/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/azure-ad-b2c/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/</loc>
-    <lastmod>2014-10-30T00:00:00+00:00</lastmod>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/blogg/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/blogg/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/blog/</loc>
-    <lastmod>2014-10-30T00:00:00+00:00</lastmod>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/boot-camp/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/boot-camp/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hugo.hgaard.dk/blog/doinng-stuff-with-rethinkdb/</loc>
-  </url>
-  
-  <url>
     <loc>http://hugo.hgaard.dk/tags/getting-started/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/getting-started/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</loc>
-  </url>
-  
-  <url>
     <loc>http://hugo.hgaard.dk/tags/ghost/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/ghost/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/git/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/git/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</loc>
-  </url>
-  
-  <url>
-    <loc>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</loc>
-  </url>
-  
-  <url>
     <loc>http://hugo.hgaard.dk/tags/nosql/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/nosql/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/openidconnect/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/openidconnect/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/os-x/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/os-x/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/realtime/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/realtime/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/rethinkdb/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/rethinkdb/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/</loc>
-    <lastmod>0001-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/visual-studio/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/visual-studio/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/tags/windows-8.1/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://hugo.hgaard.dk/categories/windows-8.1/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

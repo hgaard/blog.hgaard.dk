@@ -6,6 +6,7 @@
     <description>Recent content in Azure Ad on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://hugo.hgaard.dk/categories/azure-ad/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>Managing external users with Azure AD B2C</title>
       <link>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://hugo.hgaard.dk/blog/managing-external-users-with-azure-ad-b2c/</guid>
       <description>The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.

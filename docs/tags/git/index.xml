@@ -6,6 +6,7 @@
     <description>Recent content in Git on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Mon, 05 Jan 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://hugo.hgaard.dk/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>Getting started with git in Visual Studio</title>
       <link>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://hugo.hgaard.dk/blog/getting-started-with-git-in-visual-studio/</guid>
       <description>The last year or so at Schultz we have started to use git for more and more projects, and I have become the goto guy for git related issues. The last few times new developers have joined my project or started a new project using I have compiled an email with useful links on git and git from Visual Studio. So thought I might just put it in a blog post instead.</description>
