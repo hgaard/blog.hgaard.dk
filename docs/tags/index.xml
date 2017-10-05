@@ -2,156 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bearded Code Monkey</title>
-    <link>http://blog.hgaard.dk/tags/</link>
+    <link>https://blog.hgaard.dk/tags/</link>
     <description>Recent content in Tags on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.hgaard.dk/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.hgaard.dk/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authentication</title>
-      <link>http://blog.hgaard.dk/tags/authentication/</link>
+      <link>https://blog.hgaard.dk/tags/authentication/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/authentication/</guid>
+      <guid>https://blog.hgaard.dk/tags/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>http://blog.hgaard.dk/tags/azure/</link>
+      <link>https://blog.hgaard.dk/tags/azure/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/azure/</guid>
+      <guid>https://blog.hgaard.dk/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure Ad</title>
-      <link>http://blog.hgaard.dk/tags/azure-ad/</link>
+      <link>https://blog.hgaard.dk/tags/azure-ad/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/azure-ad/</guid>
+      <guid>https://blog.hgaard.dk/tags/azure-ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure Ad B2c</title>
-      <link>http://blog.hgaard.dk/tags/azure-ad-b2c/</link>
+      <link>https://blog.hgaard.dk/tags/azure-ad-b2c/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/azure-ad-b2c/</guid>
+      <guid>https://blog.hgaard.dk/tags/azure-ad-b2c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogg</title>
-      <link>http://blog.hgaard.dk/tags/blogg/</link>
+      <link>https://blog.hgaard.dk/tags/blogg/</link>
       <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/blogg/</guid>
+      <guid>https://blog.hgaard.dk/tags/blogg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Boot Camp</title>
-      <link>http://blog.hgaard.dk/tags/boot-camp/</link>
+      <link>https://blog.hgaard.dk/tags/boot-camp/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/boot-camp/</guid>
+      <guid>https://blog.hgaard.dk/tags/boot-camp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>http://blog.hgaard.dk/tags/getting-started/</link>
+      <link>https://blog.hgaard.dk/tags/getting-started/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/getting-started/</guid>
+      <guid>https://blog.hgaard.dk/tags/getting-started/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ghost</title>
-      <link>http://blog.hgaard.dk/tags/ghost/</link>
+      <link>https://blog.hgaard.dk/tags/ghost/</link>
       <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/ghost/</guid>
+      <guid>https://blog.hgaard.dk/tags/ghost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>http://blog.hgaard.dk/tags/git/</link>
+      <link>https://blog.hgaard.dk/tags/git/</link>
       <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/git/</guid>
+      <guid>https://blog.hgaard.dk/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nosql</title>
-      <link>http://blog.hgaard.dk/tags/nosql/</link>
+      <link>https://blog.hgaard.dk/tags/nosql/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/nosql/</guid>
+      <guid>https://blog.hgaard.dk/tags/nosql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openidconnect</title>
-      <link>http://blog.hgaard.dk/tags/openidconnect/</link>
+      <link>https://blog.hgaard.dk/tags/openidconnect/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/openidconnect/</guid>
+      <guid>https://blog.hgaard.dk/tags/openidconnect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Os X</title>
-      <link>http://blog.hgaard.dk/tags/os-x/</link>
+      <link>https://blog.hgaard.dk/tags/os-x/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/os-x/</guid>
+      <guid>https://blog.hgaard.dk/tags/os-x/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Realtime</title>
-      <link>http://blog.hgaard.dk/tags/realtime/</link>
+      <link>https://blog.hgaard.dk/tags/realtime/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/realtime/</guid>
+      <guid>https://blog.hgaard.dk/tags/realtime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rethinkdb</title>
-      <link>http://blog.hgaard.dk/tags/rethinkdb/</link>
+      <link>https://blog.hgaard.dk/tags/rethinkdb/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/rethinkdb/</guid>
+      <guid>https://blog.hgaard.dk/tags/rethinkdb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Studio</title>
-      <link>http://blog.hgaard.dk/tags/visual-studio/</link>
+      <link>https://blog.hgaard.dk/tags/visual-studio/</link>
       <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/visual-studio/</guid>
+      <guid>https://blog.hgaard.dk/tags/visual-studio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows 8.1</title>
-      <link>http://blog.hgaard.dk/tags/windows-8.1/</link>
+      <link>https://blog.hgaard.dk/tags/windows-8.1/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.hgaard.dk/tags/windows-8.1/</guid>
+      <guid>https://blog.hgaard.dk/tags/windows-8.1/</guid>
       <description></description>
     </item>
     
