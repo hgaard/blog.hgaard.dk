@@ -7,7 +7,7 @@
 <meta name="author" content="Jakob Højgaard">
 <meta name="description" content="Describe your website">
 <meta name="generator" content="Hugo 0.27.1" />
-<title>Hello blog</title>
+<title></title>
 <link rel="shortcut icon" href="http://blog.hgaard.dk/images/favicon.ico">
 <link rel="stylesheet" href="http://blog.hgaard.dk/css/style.css">
 <link rel="stylesheet" href="http://blog.hgaard.dk/css/highlight.css">
@@ -21,16 +21,13 @@
 <link href="http://blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="Bearded Code Monkey" />
 
 
-<meta property="og:title" content="Hello blog" />
-<meta property="og:description" content="This is an introduction post! Oh well I guess one can&rsquo;t stat a blog without some kind of introduction. I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I really enjoy working in technology and I truly get thrilled when diving into new shiny languages, frameworks and tools.
-I&rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later." />
+<meta property="og:title" content="" />
+<meta property="og:description" content="Reports from the refactoring battlefield and how to put your domain back into the mighty monolith in the age of microservices
+This talk will take you on a journey into the world of overly complicated and overengineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.
+I will delve into common
+Overly abstracted layers that hides all useful informauin of porpuse" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.hgaard.dk/hello-blog/" />
-
-
-
-<meta property="article:published_time" content="2014-10-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-10-01T00:00:00&#43;00:00"/>
+<meta property="og:url" content="http://blog.hgaard.dk/talks/reports-from-the-refactoring-battlefield/" />
 
 
 
@@ -44,21 +41,30 @@ I&rsquo;m starting this blog because I want to archive some my thoughts and prog
 
 
 
-<meta itemprop="name" content="Hello blog">
-<meta itemprop="description" content="This is an introduction post! Oh well I guess one can&rsquo;t stat a blog without some kind of introduction. I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I really enjoy working in technology and I truly get thrilled when diving into new shiny languages, frameworks and tools.
-I&rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later.">
 
 
-<meta itemprop="dateModified" content="2014-10-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="76">
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Reports from the refactoring battlefield and how to put your domain back into the mighty monolith in the age of microservices
+This talk will take you on a journey into the world of overly complicated and overengineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.
+I will delve into common
+Overly abstracted layers that hides all useful informauin of porpuse">
+
+
+
+<meta itemprop="wordCount" content="179">
 
 
 
 <meta itemprop="keywords" content="" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Hello blog"/>
-<meta name="twitter:description" content="This is an introduction post! Oh well I guess one can&rsquo;t stat a blog without some kind of introduction. I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I really enjoy working in technology and I truly get thrilled when diving into new shiny languages, frameworks and tools.
-I&rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later."/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Reports from the refactoring battlefield and how to put your domain back into the mighty monolith in the age of microservices
+This talk will take you on a journey into the world of overly complicated and overengineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.
+I will delve into common
+Overly abstracted layers that hides all useful informauin of porpuse"/>
 <meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
 
 
@@ -81,22 +87,60 @@ I&rsquo;m starting this blog because I want to archive some my thoughts and prog
         
 <article class="post">
     <header>
-        <h1>Hello blog</h1>
+        <h1></h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
-        October 1, 2014
+        January 1, 0001
         <br>
         
         </h2>
     </header>
     <section id="post-body">
-        <p>This is an introduction post!
-Oh well I guess one can&rsquo;t stat a blog without some kind of introduction.
-I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I really enjoy working in technology and I truly get thrilled when diving into new shiny languages, frameworks and tools.</p>
+        
 
-<p>I&rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later.</p>
+<h1 id="reports-from-the-refactoring-battlefield">Reports from the refactoring battlefield</h1>
 
-<p>Stay tuned!</p>
+<p><em>and how to put your domain back into the mighty monolith in the age of microservices</em></p>
+
+<p>This talk will take you on a journey into the world of overly complicated and overengineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.</p>
+
+<p>I will delve into common</p>
+
+<p>Overly abstracted layers that hides all useful informauin of porpuse</p>
+
+<p>Having the courage to change large parts of a legacy system</p>
+
+<p>A journey into (regular/overengineered) enterprise design patterns and how to get back to a saner/simpler monlith.</p>
+
+<p>Problems worth pondering</p>
+
+<ul>
+<li>overly abstract (no meaning) naming
+
+<ul>
+<li>vendorFactoryServiceInterface!!</li>
+</ul></li>
+<li>what to focus on when writing tests</li>
+<li>Use the right tools (git, CI, etc&hellip;)</li>
+<li>Test test test</li>
+<li>Logging logging logging!</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>Make sure you undertand why the refactoring is necessary
+
+<ul>
+<li>Many valid reasons but be 100% sure you know and understand</li>
+</ul></li>
+<li>Find a way to break the system into testable &ldquo;components&rdquo;</li>
+<li>A lot of tests might be temporay trancient
+
+<ul>
+<li>Don&rsquo;t keep from writing tests just because you are not sure they are long lasting</li>
+</ul></li>
+</ul>
 
     </section>
 </article>
@@ -110,7 +154,7 @@ I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I reall
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fblog.hgaard.dk%2fhello-blog%2f - Hello%20blog by @hgaard"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fblog.hgaard.dk%2ftalks%2freports-from-the-refactoring-battlefield%2f -  by @hgaard"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -179,7 +223,7 @@ I&rsquo;m software developer, a husband, a dad and a lot of other stuff. I reall
         </li>
     
         <li>
-            <a href="/talks/reports-from-the-refactoring-battlefield/"><aside class="dates">Jan 1 0001</aside></a>
+            <a href="/hello-blog/">Hello blog<aside class="dates">Oct 1 2014</aside></a>
         </li>
     
 </ul>

@@ -56,3 +56,9 @@ push to origin
 ```
 $ git push -u origin master
 ```
+
+## Caveats
+
+- Pusing to extra remote can be problematic
+- Always use rebase - after all tfs only have one branch
+- tfs branches - try to avoid
