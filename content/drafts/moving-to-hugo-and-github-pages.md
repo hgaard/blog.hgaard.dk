@@ -14,6 +14,9 @@ title = "..."
 
 ## Why
 
+- Less maintainance
+- Never really liked the editing experience - prefered editing in a real editor and pusign to git repo
+
 ## How
 
 - Hugo getting started and theme
@@ -25,8 +28,9 @@ title = "..."
   post = "/:slug/"
   blog = "/:slug/"
   ```
-  
+
     - editing in existing posts to because of different interpretation of md i.ie `####`
+    - Images
 - host on github pages
     - docs folder - easiest
     - publish dir

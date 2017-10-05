@@ -5,7 +5,7 @@ themesDir = "themes"
 
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-4800839-2"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "hgaard"
 publishDir = "docs"
