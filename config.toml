@@ -10,7 +10,9 @@ googleAnalytics = ""
 disqusShortname = "hgaard"
 publishDir = "docs"
 
-
+[permalinks]
+  post = "/:slug/"
+  blog = "/:slug/"
 
 [params]
 	name = "Jakob Højgaard"

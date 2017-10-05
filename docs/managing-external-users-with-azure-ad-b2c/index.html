@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jakob Højgaard">
+<meta name="description" content="Describe your website">
+<meta name="generator" content="Hugo 0.27.1" />
+<title>Managing external users with Azure AD B2C</title>
+<link rel="shortcut icon" href="http://hugo.hgaard.dk/images/favicon.ico">
+<link rel="stylesheet" href="http://hugo.hgaard.dk/css/style.css">
+<link rel="stylesheet" href="http://hugo.hgaard.dk/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="http://hugo.hgaard.dk/css/monosocialiconsfont.css">
+
+
+
+<link href="http://hugo.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="Bearded Code Monkey" />
+
+
+<meta property="og:title" content="Managing external users with Azure AD B2C" />
+<meta property="og:description" content="The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
+###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hugo.hgaard.dk/managing-external-users-with-azure-ad-b2c/" />
+
+
+
+<meta property="article:published_time" content="2016-04-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-04-21T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Managing external users with Azure AD B2C">
+<meta itemprop="description" content="The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
+###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it.">
+
+
+<meta itemprop="dateModified" content="2016-04-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1555">
+
+
+
+<meta itemprop="keywords" content="Azure,Azure AD,Azure AD B2C,OpenIdConnect,Authentication," />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Managing external users with Azure AD B2C"/>
+<meta name="twitter:description" content="The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
+###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it."/>
+<meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://hugo.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://hugo.hgaard.dk/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Managing external users with Azure AD B2C</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        April 21, 2016
+        <br>
+        
+        
+            
+                <a href="http://hugo.hgaard.dk/tags/azure">Azure</a>
+            
+                <a href="http://hugo.hgaard.dk/tags/azure-ad">Azure AD</a>
+            
+                <a href="http://hugo.hgaard.dk/tags/azure-ad-b2c">Azure AD B2C</a>
+            
+                <a href="http://hugo.hgaard.dk/tags/openidconnect">OpenIdConnect</a>
+            
+                <a href="http://hugo.hgaard.dk/tags/authentication">Authentication</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p>The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.</p>
+
+<p>###What is Azure AD B2C
+First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it. First of all the name B2C simply means business to consumer and is in preview with another new variant of AD called B2B (Business to Business). It is intended to make it easier to set up authentication with multiple social identity providers like Facebook, Google or LinkedIn as easy as can be. But B2C also provides a way to sign up users without a social identity by providing a local account type - which in turn really is just a modified version of an AD account. For the local account B2C provides all the necessary plumbing like signup, password and user management, such that the consuming application never need to store any sensitive information. You can find a lot more information in the B2C documentation <a href="https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/">here</a>.</p>
+
+<p>###The setup
+Very good then, so the customer I&rsquo;m working with has some internal applications that external partners also needs access to, to cooperate with them. The applications range from web apps and web api&rsquo;s to mobile apps. This in essence make 3 different scenarios I had to solve:</p>
+
+<ul>
+<li>Simple login to web app</li>
+<li>Call web api from web app on behalf of user</li>
+<li>Login from mobile app</li>
+</ul>
+
+<p>In this post i will describe how we solved the first two scenarios and I might write about the latter in another post when I get around to actually writing the code. As I mentioned, the setup required internal as well as external users granted access to the applications. B2C only provides a way to integrate identities from other (social media) identity provides and the build in users. It does not provide any way to synchronize the B2C AD with an AD through technology like Azure AD Connect. Nor does it provide a way to federate with other AD based identity providers like &ldquo;regular&rdquo; Azure AD (which by the way is called B2E - or business to employee) or internal AD through ADFS. Thus the applications I work on need to know 2 identity providers. External user resides in B2C and internal users in an B2E existing instance. For info about how to setup B2C and the concepts of policies, please visit the <a href="https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/">B2C documentation</a>. The getting started sections are excellent.</p>
+
+<p>Just to recap in a simple authentication scenario, have a look at the illustration here<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>
+<img src="/content/images/2016/04/basics_of_auth_in_aad.png" alt="Azure AD login scenario" /></p>
+
+<p>###Initial assumption</p>
+
+<p>I&rsquo;m already using Owin middleware for authentication, so I thought that I might just configure the middleware with another OpenID Connect idp in the Owin startup configuraion. But since it was not obvious to me how to distinguish the 2 when logging in, I decided to add the internal idp as a WS-Federation idp. This turned out to be a feasible solution for login with the web applications, since I could login with identities from both idp and have the application work as expected. All good, except that the application needs to make web api calls on behald of the user. Then I remembered how bad WS-Fed is for the modern web. WS-Fed uses SAML tokens and these won&rsquo;t work with the bearer token authentication in the web api. Back to the drawing board, or rather, do more googling.</p>
+
+<p>###OpenId Connect all the way</p>
+
+<p>It turns out the setting up Owin with multiple idp&rsquo;s with the same protocol is not all that dificoult, actualy it&rsquo;s straight forward, they just have to be given a <code>AuthenticationType</code> which is just s string. For simplicity I&rsquo;m just using the tenant uri.</p>
+
+<pre><code class="language-csharp">app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
+{
+    // Idp identifier 
+    AuthenticationType = Auth.Config.ExternalUsersTenant,
+    ClientId = Config.ExternalUsersClientId,
+    RedirectUri = Auth.Config.RedirectUri,
+    PostLogoutRedirectUri = Auth.Config.RedirectUri,
+    Notifications = new OpenIdConnectAuthenticationNotifications
+    {
+        AuthenticationFailed = OnAuthenticationFailed,
+        RedirectToIdentityProvider = OnRedirectToIdentityProvider,
+        AuthorizationCodeReceived = OnAuthorizationCodeReceived
+    },
+    Scope = &quot;openid offline_access&quot;,
+   
+    TokenValidationParameters = new System.IdentityModel.Tokens.TokenValidationParameters
+    {
+        NameClaimType = &quot;name&quot;,
+    }
+});
+</code></pre>
+
+<p>And when logging in the same <code>AuthenticationType</code> is used to point out the idp when calling &lsquo;Challenge&rsquo;</p>
+
+<pre><code class="language-csharp">if (loginType == AuthType.External)
+{
+    context.GetOwinContext().Authentication.Challenge(
+        new AuthenticationProperties(
+            new Dictionary&lt;string, string&gt;
+            {
+                {Config.PolicyKey, Config.SignInByEmailPolicyId}
+            })
+        {
+            RedirectUri = &quot;/&quot;,
+            AllowRefresh = true,
+            IsPersistent = true
+        }, Config.ExternalUsersTenant); // Identifies idp
+}
+else if (loginType == AuthType.Internal)
+{
+    context.GetOwinContext()
+        .Authentication.Challenge(new AuthenticationProperties
+        {
+            RedirectUri = &quot;/&quot;,
+            AllowRefresh = true,
+            IsPersistent = true
+        }, Config.InternalUsersTenant);
+}
+</code></pre>
+
+<p>###Experimental problems
+Excellent, now I could login with credentials from both the B2C AD and the B2E one. Yeah, well not really. It turns out that Microsoft is also rolling out an AD v2 app model and that the library for interacting with AD - the Active Directory Access Library (ADAL) in the release with that supports B2C, is hardcoded to use v2 app model. All good except that applications that are already registered in the B2E AD are in effect not visible to the version 2 of the api. They need to be re-registered in the <a href="https://aadguide.azurewebsites.net/integration/registerappv2/">new application portal</a> (which is also in preview.) in the in order login through the B2C AD.
+Hmmm, I could have started the registration in the new portal, but I decided I had enough places to maintain configuration for now (B2C ADd&rsquo;s needs to be configured in both the old azure <a href="https://manage.windowsazure.com">management portal</a> and the new (<a href="https://portal.azure.com">just portal portal</a>). So I decided to have namespaces come to the rescue and use both the new (experimental) ADALv4 library and the old ADALv2. It bloats the code quite a bit in certain places, but who knows ADALv4 might have support for the old api once it gets released. I&rsquo;ll see if I made a wise choice. But if all goes wrong, registering the app in the v2 portal is still an option.</p>
+
+<p>###Producing Bearer tokens
+In order to call the web api it&rsquo;s necessary to provide an access token. The acquisition of the access token follows after the sign in flow and the whole protocol is illustrated in the figrure below<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+
+<p><img src="/content/images/2016/04/web_app_to_web_api.png" alt="Acquiring an access token" /></p>
+
+<p>For this to work with both B2C and B2E I&rsquo;ll have to make use of both the v2 and v4 of the ADAL library again. Here though, the difference is more profound since the version 4 has made it easier for the consumer of the api to acquire the access token. Instead of keeping track of validity of id token to determine if a refresh token should be used it is all wrapped in one method <code>AcquireTokenSilent()</code>, which will then only fail if the user needs to reenter credentials i.e. refresh token is lost or has expired.</p>
+
+<p>On the web api side the Owin pipeline needs to be configured to consume OauthBearer tokens form the 2 idp&rsquo;s. As with configuring the OpenIdConnect parts the idp&rsquo;s can be distinguished by setting the <code>AuthenticationType</code> accordingly.</p>
+
+<pre><code class="language-csharp"> public void ConfigureAuth(IAppBuilder app)
+        {
+            // B2E AAD
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
+            {
+                AccessTokenFormat = new JwtFormat(
+                      new TokenValidationParameters
+                      {
+                           ValidAudience = Config.InternalUsersClientId
+                      }, 
+                      new OpenIdConnectCachingSecurityTokenProvider(
+                           string.Format(Config.AadInstance,
+                             Config.InternalUsersTenant, 
+                             string.Empty, 
+                             Config.DiscoverySuffix, 
+                             string.Empty))),
+                 AuthenticationType = Config.InternalUsersTenant
+            });
+
+            // B2C AAD
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
+            {
+                AccessTokenFormat = new JwtFormat(
+                      new TokenValidationParameters
+                      {
+                           ValidAudience = Config.ExternalUsersClientId
+                      }, 
+                      new OpenIdConnectCachingSecurityTokenProvider(
+                           String.Format(Config.AadInstance, 
+                               Config.ExternalUsersTenant, 
+                               &quot;v2.0&quot;, Config.DiscoverySuffix, &quot;?p=&quot;
+                               Config.CommonPolicy))),
+                AuthenticationType = Config.ExternalUsersTenant
+            });
+        }
+</code></pre>
+
+<p>Note that the metadata string provided for the 2 idp&rsquo;S differ in that the B2C one points to version 2 of the AD api and that it also needs to reference a policy.</p>
+
+<p>###A working sample app
+I have modified and combined a few of the sample apps provided by the Azure team and published it to <a href="https://github.com/hgaard/azure-b2c-multitenant-demo">Github</a>
+It has a web app and a web api and illustrates the scenario described here
+Note that there are a few classes inherited form ms examples on B2C. These are necessary because ADAL is not yet fully updated with the necessary changes for B2C.
+A small note of caution , it is extremely important to use the latest version of Microsoft.IdentityModel.Protocol.Extensions, since the older versions will produce wrong query strings when signing in with B2C.</p>
+
+<h3 id="in-conclusion">In conclusion</h3>
+
+<p>Even though it surely has a few rough edges, the prospects are definetly there.
+I know there are several and more mature alternatives like <a href="http://auth0.com">Auth0</a> and <a href="https://github.com/IdentityServer/IdentityServer3">Identity Server</a> from Thinktecture. They are both great products, but in this case the sales point for the customer was the ability to add new external users to their systems without having to think about how to manage sensitive information like user passwords, since this is managed 100% by Azure AD B2C. As mentioned earlier I have not yet had the chance to work on extending the solution to mobile apps, but it&rsquo;s in the pipeline, so i might update you on that then.</p>
+
+<p>A note for the interested. The pre-release of B2C AD does not yet support Single Page Application (SPA) like Angular apps. Luckily for me this was not necessary this time :). I hope it will be high in the feature list for the team, since most of the projects we do these days are in that realm.</p>
+
+<p><strong>Resources</strong></p>
+
+<ul>
+<li>Azure AD B2C <a href="https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/">documentation</a></li>
+<li>Azure quick starts on <a href="https://github.com/AzureADQuickStarts/">Github</a></li>
+<li>Azure AD App v2 <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/">registration</a></li>
+<li>Authentication scenarios for Azure AD <a href="https://azure.microsoft.com/en-gb/documentation/articles/active-directory-authentication-scenarios/">explained</a></li>
+<li>JWT <a href="https://jwt.io/#debugger-io"> Debugger</a></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Image borrowed from <a href="https://azure.microsoft.com/en-gb/documentation/articles/active-directory-authentication-scenarios/">&ldquo;Authentication scenarios for Azure AD&rdquo; explained</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/hgaard">
+    <img class="avatar" src="http://hugo.hgaard.dk/images/avatar.png">
+    <div>
+        <span class="dark">Jakob Højgaard</span>
+        <span>Code and things releated</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fhugo.hgaard.dk%2fmanaging-external-users-with-azure-ad-b2c%2f - Managing%20external%20users%20with%20Azure%20AD%20B2C by @hgaard"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hgaard" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/doinng-stuff-with-rethinkdb/">Doing stuff with RethinkDB<aside class="dates">Aug 4 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/setting-up-this-blog/">Setting up this blog<aside class="dates">Nov 12 2015</aside></a>
+        </li>
+    
+        <li>
+            <a href="/getting-started-with-git-in-visual-studio/">Getting started with git in Visual Studio<aside class="dates">Jan 5 2015</aside></a>
+        </li>
+    
+        <li>
+            <a href="/setting-up-my-new-mac/">Installing Windows 8.1 on my mac<aside class="dates">Nov 17 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/finding-big-files-in-a-git-repo-on-windows/">Finding big files in a git repo on windows<aside class="dates">Oct 30 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/setting-up-a-difftool-for-git-on-windows/">Setting up a difftool for git on windows<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+        <li>
+            <a href="/hello-blog/">Hello blog<aside class="dates">Oct 1 2014</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/hgaard">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/hgaard">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Jakob Højgaard
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://hugo.hgaard.dk/js/main.js"></script>
+<script src="http://hugo.hgaard.dk/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

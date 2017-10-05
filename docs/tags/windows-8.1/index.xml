@@ -13,10 +13,10 @@
     
     <item>
       <title>Installing Windows 8.1 on my mac</title>
-      <link>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</link>
+      <link>http://hugo.hgaard.dk/setting-up-my-new-mac/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hugo.hgaard.dk/blog/setting-up-my-new-mac/</guid>
+      <guid>http://hugo.hgaard.dk/setting-up-my-new-mac/</guid>
       <description>I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&amp;rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record.</description>
     </item>
     
