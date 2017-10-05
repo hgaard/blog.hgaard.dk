@@ -17,9 +17,8 @@
       
       <guid>https://blog.hgaard.dk/talks/reports-from-the-refactoring-battlefield/</guid>
       <description>Reports from the refactoring battlefield and how to put your domain back into the mighty monolith in the age of microservices
-This talk will take you on a journey into the world of overly complicated and overengineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.
-I will delve into common
-Overly abstracted layers that hides all useful informauin of porpuse</description>
+This talk will take you on a journey into the world of overly complicated and over engineered enterprise software and take you back to a saner and simpler world embracing the monolith first approach.
+In this talk you will learn why it is worth considering refactoring your large overly complicated (enterprise) system rather that starting out from scratch.</description>
     </item>
     
   </channel>
