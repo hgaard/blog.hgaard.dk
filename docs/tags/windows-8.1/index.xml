@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows 8.1 on Bearded Code Monkey</title>
-    <link>http://hugo.hgaard.dk/tags/windows-8.1/</link>
+    <link>http://blog.hgaard.dk/tags/windows-8.1/</link>
     <description>Recent content in Windows 8.1 on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 17 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hugo.hgaard.dk/tags/windows-8.1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.hgaard.dk/tags/windows-8.1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Windows 8.1 on my mac</title>
-      <link>http://hugo.hgaard.dk/setting-up-my-new-mac/</link>
+      <link>http://blog.hgaard.dk/setting-up-my-new-mac/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hugo.hgaard.dk/setting-up-my-new-mac/</guid>
+      <guid>http://blog.hgaard.dk/setting-up-my-new-mac/</guid>
       <description>I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&amp;rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record.</description>
     </item>
     

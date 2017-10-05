@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ghost on Bearded Code Monkey</title>
-    <link>http://hugo.hgaard.dk/tags/ghost/</link>
+    <link>http://blog.hgaard.dk/tags/ghost/</link>
     <description>Recent content in Ghost on Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 12 Nov 2015 12:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hugo.hgaard.dk/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.hgaard.dk/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up this blog</title>
-      <link>http://hugo.hgaard.dk/setting-up-this-blog/</link>
+      <link>http://blog.hgaard.dk/setting-up-this-blog/</link>
       <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>http://hugo.hgaard.dk/setting-up-this-blog/</guid>
+      <guid>http://blog.hgaard.dk/setting-up-this-blog/</guid>
       <description>Introduction I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.
 Anyway here goes:
 I started out hosting it on Heroku. It&amp;rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic.</description>
