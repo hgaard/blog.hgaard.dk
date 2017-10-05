@@ -27,7 +27,7 @@ Very good then, so the customer I'm working with has some internal applications 
 In this post i will describe how we solved the first two scenarios and I might write about the latter in another post when I get around to actually writing the code. As I mentioned, the setup required internal as well as external users granted access to the applications. B2C only provides a way to integrate identities from other (social media) identity provides and the build in users. It does not provide any way to synchronize the B2C AD with an AD through technology like Azure AD Connect. Nor does it provide a way to federate with other AD based identity providers like "regular" Azure AD (which by the way is called B2E - or business to employee) or internal AD through ADFS. Thus the applications I work on need to know 2 identity providers. External user resides in B2C and internal users in an B2E existing instance. For info about how to setup B2C and the concepts of policies, please visit the [B2C documentation](https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/). The getting started sections are excellent. 
 
 Just to recap in a simple authentication scenario, have a look at the illustration here[^1]
-![Azure AD login scenario](/content/images/2016/04/basics_of_auth_in_aad.png)
+![Azure AD login scenario](/../images/basics_of_auth_in_aad.png)
 
 ###Initial assumption
 
@@ -97,7 +97,7 @@ Hmmm, I could have started the registration in the new portal, but I decided I h
 ###Producing Bearer tokens
 In order to call the web api it's necessary to provide an access token. The acquisition of the access token follows after the sign in flow and the whole protocol is illustrated in the figrure below[^1]
 
-![Acquiring an access token](/content/images/2016/04/web_app_to_web_api.png)
+![Acquiring an access token](/../images/web_app_to_web_api.png)
 
 For this to work with both B2C and B2E I'll have to make use of both the v2 and v4 of the ADAL library again. Here though, the difference is more profound since the version 4 has made it easier for the consumer of the api to acquire the access token. Instead of keeping track of validity of id token to determine if a refresh token should be used it is all wrapped in one method ```AcquireTokenSilent()```, which will then only fail if the user needs to reenter credentials i.e. refresh token is lost or has expired.
 

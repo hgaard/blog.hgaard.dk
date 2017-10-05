@@ -18,6 +18,15 @@ title = "..."
 
 - Hugo getting started and theme
     - Cactus bacasuse of simplicity and I'm scandinavian
+    - permalink to match existing url's
+    
+    ```
+[permalinks]
+  post = "/:slug/"
+  blog = "/:slug/"
+  ```
+  
+    - editing in existing posts to because of different interpretation of md i.ie `####`
 - host on github pages
     - docs folder - easiest
     - publish dir

@@ -50,7 +50,7 @@ In order to connect to the database I will need a driver for it. RethinkDB offic
 
 To get a feel for the database and the [ReQL](https://www.rethinkdb.com/docs/introduction-to-reql/) query language I started out writing simple queries from LinqPad (I have a few examples [here](https://github.com/hgaard/RethinkLogs/tree/master/query-samples)). RethinkDB also comes with a dashboard (running on localhost port 8080) that has a *data explorer* where you can write queries in the native ReQL language (JavaScript/JSON). The data explorer provides an intellisense-like experience, that proved really helpful for discovering the API surface.
 
-![Image of a console example query](/content/images/2016/08/rethinkdb-console-api.png)
+![Image of a console example query](/../images/rethinkdb-console-api.png)
 
 #### Writing the app
 
