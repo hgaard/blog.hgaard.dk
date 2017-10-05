@@ -13,10 +13,11 @@ title = "Managing external users with Azure AD B2C"
 
 The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
 
-###What is Azure AD B2C
+### What is Azure AD B2C
+
 First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it. First of all the name B2C simply means business to consumer and is in preview with another new variant of AD called B2B (Business to Business). It is intended to make it easier to set up authentication with multiple social identity providers like Facebook, Google or LinkedIn as easy as can be. But B2C also provides a way to sign up users without a social identity by providing a local account type - which in turn really is just a modified version of an AD account. For the local account B2C provides all the necessary plumbing like signup, password and user management, such that the consuming application never need to store any sensitive information. You can find a lot more information in the B2C documentation [here](https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/).
 
-###The setup
+### The setup
 Very good then, so the customer I'm working with has some internal applications that external partners also needs access to, to cooperate with them. The applications range from web apps and web api's to mobile apps. This in essence make 3 different scenarios I had to solve: 
 
 * Simple login to web app
@@ -29,12 +30,12 @@ In this post i will describe how we solved the first two scenarios and I might w
 Just to recap in a simple authentication scenario, have a look at the illustration here[^1]
 ![Azure AD login scenario](/../images/basics_of_auth_in_aad.png)
 
-###Initial assumption
+### Initial assumption
 
 I'm already using Owin middleware for authentication, so I thought that I might just configure the middleware with another OpenID Connect idp in the Owin startup configuraion. But since it was not obvious to me how to distinguish the 2 when logging in, I decided to add the internal idp as a WS-Federation idp. This turned out to be a feasible solution for login with the web applications, since I could login with identities from both idp and have the application work as expected. All good, except that the application needs to make web api calls on behald of the user. Then I remembered how bad WS-Fed is for the modern web. WS-Fed uses SAML tokens and these won't work with the bearer token authentication in the web api. Back to the drawing board, or rather, do more googling.
 
 
-###OpenId Connect all the way
+### OpenId Connect all the way
 
 It turns out the setting up Owin with multiple idp's with the same protocol is not all that dificoult, actualy it's straight forward, they just have to be given a ``AuthenticationType`` which is just s string. For simplicity I'm just using the tenant uri.
 
@@ -90,11 +91,12 @@ else if (loginType == AuthType.Internal)
 }
 ```
 
-###Experimental problems
+### Experimental problems
+
 Excellent, now I could login with credentials from both the B2C AD and the B2E one. Yeah, well not really. It turns out that Microsoft is also rolling out an AD v2 app model and that the library for interacting with AD - the Active Directory Access Library (ADAL) in the release with that supports B2C, is hardcoded to use v2 app model. All good except that applications that are already registered in the B2E AD are in effect not visible to the version 2 of the api. They need to be re-registered in the [new application portal](https://aadguide.azurewebsites.net/integration/registerappv2/) (which is also in preview.) in the in order login through the B2C AD. 
 Hmmm, I could have started the registration in the new portal, but I decided I had enough places to maintain configuration for now (B2C ADd's needs to be configured in both the old azure [management portal](https://manage.windowsazure.com) and the new ([just portal portal](https://portal.azure.com)). So I decided to have namespaces come to the rescue and use both the new (experimental) ADALv4 library and the old ADALv2. It bloats the code quite a bit in certain places, but who knows ADALv4 might have support for the old api once it gets released. I'll see if I made a wise choice. But if all goes wrong, registering the app in the v2 portal is still an option.
 
-###Producing Bearer tokens
+### Producing Bearer tokens
 In order to call the web api it's necessary to provide an access token. The acquisition of the access token follows after the sign in flow and the whole protocol is illustrated in the figrure below[^1]
 
 ![Acquiring an access token](/../images/web_app_to_web_api.png)
@@ -143,7 +145,7 @@ On the web api side the Owin pipeline needs to be configured to consume OauthBea
 Note that the metadata string provided for the 2 idp'S differ in that the B2C one points to version 2 of the AD api and that it also needs to reference a policy. 
 
  
-###A working sample app
+### A working sample app
 I have modified and combined a few of the sample apps provided by the Azure team and published it to [Github](https://github.com/hgaard/azure-b2c-multitenant-demo) 
 It has a web app and a web api and illustrates the scenario described here
 Note that there are a few classes inherited form ms examples on B2C. These are necessary because ADAL is not yet fully updated with the necessary changes for B2C.

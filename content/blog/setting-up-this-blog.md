@@ -14,20 +14,20 @@ aliases = [
 ]
 +++
 
-# Introduction
+## Introduction
 I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.  
 
 Anyway here goes: 
 
 I started out hosting it on Heroku. It's a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic. How ever i like to tinker and a Pluralsight course - [Mastering Your Own Domain](https://app.pluralsight.com/library/courses/master-domain/table-of-contents) by Rob Conery - inspired me to be more in control. For instructions on how to run Ghost on Heroku I used [this](http://www.therightcode.net/deploy-ghost-to-heroku-for-free/) guide by [Greg Bergé](http://www.therightcode.net/).
 
-# The basics
+## The basics
 The blogging software is [Ghost](http://tryghost.org), which is based in node and I use Postgres as datastore and have an nginx server running in front of node. The whole thing runs on a Ubuntu 15.10 server on [DigitalOcean](http://digitalocean.com).
 
-# The how
+## The how
 The Pluralsight course mentioned earlier basically describes how to setup Ghost on a new server droplet on DigitalOcean. So for detailed description have a look at that.
 
-##Setting up the server
+## Setting up the server
 **Create droplet**
 
 Head over to Digital, create an account if you don't already have one and then create a new virtual machine which at Digital Ocean is called a Droplet. I use the smallest instance they provide with Ubuntu 15.10. Remember to check the backup checkbox, it's $1 more a month but having a backup is nice. Last thing; add a SSH key for convenience when logging on to the machine. When the machine is ready (usually takes around 1 minute) ssh into it to get working.

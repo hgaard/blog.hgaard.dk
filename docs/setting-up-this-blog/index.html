@@ -105,7 +105,7 @@ I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applic
     <section id="post-body">
         
 
-<h1 id="introduction">Introduction</h1>
+<h2 id="introduction">Introduction</h2>
 
 <p>I have had this blog brewing for a while, but have not really had the time to finish it before - I might get back to why in a later post.</p>
 
@@ -113,16 +113,17 @@ I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applic
 
 <p>I started out hosting it on Heroku. It&rsquo;s a great way of hosting web applications and you can start out on their free tier which also has a lot of free add-ons like Postgres and New Relic. How ever i like to tinker and a Pluralsight course - <a href="https://app.pluralsight.com/library/courses/master-domain/table-of-contents">Mastering Your Own Domain</a> by Rob Conery - inspired me to be more in control. For instructions on how to run Ghost on Heroku I used <a href="http://www.therightcode.net/deploy-ghost-to-heroku-for-free/">this</a> guide by <a href="http://www.therightcode.net/">Greg Bergé</a>.</p>
 
-<h1 id="the-basics">The basics</h1>
+<h2 id="the-basics">The basics</h2>
 
 <p>The blogging software is <a href="http://tryghost.org">Ghost</a>, which is based in node and I use Postgres as datastore and have an nginx server running in front of node. The whole thing runs on a Ubuntu 15.10 server on <a href="http://digitalocean.com">DigitalOcean</a>.</p>
 
-<h1 id="the-how">The how</h1>
+<h2 id="the-how">The how</h2>
 
 <p>The Pluralsight course mentioned earlier basically describes how to setup Ghost on a new server droplet on DigitalOcean. So for detailed description have a look at that.</p>
 
-<p>##Setting up the server
-<strong>Create droplet</strong></p>
+<h2 id="setting-up-the-server">Setting up the server</h2>
+
+<p><strong>Create droplet</strong></p>
 
 <p>Head over to Digital, create an account if you don&rsquo;t already have one and then create a new virtual machine which at Digital Ocean is called a Droplet. I use the smallest instance they provide with Ubuntu 15.10. Remember to check the backup checkbox, it&rsquo;s $1 more a month but having a backup is nice. Last thing; add a SSH key for convenience when logging on to the machine. When the machine is ready (usually takes around 1 minute) ssh into it to get working.</p>
 

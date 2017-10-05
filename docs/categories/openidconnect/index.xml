@@ -18,7 +18,7 @@
       
       <guid>http://blog.hgaard.dk/managing-external-users-with-azure-ad-b2c/</guid>
       <description>The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
-###What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it.</description>
+What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it.</description>
     </item>
     
   </channel>
