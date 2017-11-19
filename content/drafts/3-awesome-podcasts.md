@@ -1,12 +1,15 @@
 +++
 author = "Jakob Højgaard"
-date = 2016-05-15T00:00:00Z
+date = 2017-12-15T00:00:00Z
 description = ""
 draft = true
 slug = "3-awesome-podcasts"
 title = "3 awesome podcast episodes"
 
 +++
+
+I recently went through my draft post and found this little post about 3 awesome podcast. For some reason I never got around to publishing it, but since I still thing they are quite awesome here they are:
+
 
 I thought i might share a few good podcasts I've listened to recently.
 

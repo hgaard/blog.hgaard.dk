@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["refactoring", "TDD", "DDD"]
-date = 0001-01-01T00:00:00Z
+date = 2018-01-15T00:00:00Z
 description = ""
 draft = true
 slug = "refactoring-a-large-running-system"
