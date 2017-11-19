@@ -10,6 +10,9 @@ googleAnalytics = "UA-4800839-2"
 disqusShortname = "hgaard"
 publishDir = "docs"
 
+# Pagination
+paginate = 6
+
 [permalinks]
   post = "/:slug/"
   blog = "/:slug/"
@@ -33,6 +36,7 @@ publishDir = "docs"
 	# Navigation links
 	home = ""
 	subscribe = ""
+
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""

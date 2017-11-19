@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["git", "versioncontrol", "tfs"]
-date = 0001-01-01T00:00:00Z
+date = 2017-11-30T00:00:00Z
 description = ""
 draft = true
 slug = "you-should-use-git-even-thoug-you-cant"
@@ -79,6 +79,19 @@ push to origin
 ```
 $ git push -u origin master
 ```
+
+A last useful nugget is managing branches. Managing branches have also been a a bit..
+
+With git-tfs, TFS branches can be managed as regular branches it git. here goes
+
+Pull a branch from tfs:
+
+```bash
+git tfs branch --init $/Repository/ProjectBranch
+```
+
+this will initialize a git branch with the n
+
 
 ## Caveats
 
