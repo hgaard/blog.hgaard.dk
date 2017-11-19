@@ -1,48 +1,54 @@
 +++
 author = "Jakob Højgaard"
 categories = ["hugo"]
-date = 0001-01-01T12:00:00Z
+date = 2017-12-10T12:00:00Z
 description = ""
 draft = true
 slug = "..."
 tags = ["hugo"]
-title = "..."
+title = "Moving to Hugo and Github pages"
 
 +++
-
-# Moving to Hugo and Github pages
-
 ## Why
 
-- Less maintainance
-- Never really liked the editing experience - prefered editing in a real editor and pusign to git repo
+Well sometimes I just need to change something, and to be completely honest, that's probably the main reason for this change. However I do also have a few other reasons that just might be of value to you. Previously the blog was hosted on a [DigitalOcean]() droplet and using Ghost blogging and had a Postgres database for storage. It was fairly simple to setup and maintain, but the thing that was not that smooth was keeping up with updates from Ghost. It wasn't to be fair a lot of work, but still some work and in the end that made me just leave it and not update anything. Because of that I started thinking about moving to the official Docker image for Ghost. That would make it more or less pain free, but then another reason kept me from doing that. 
+
+The thing is that I have never really appeciadet the editign experience in Ghost. Not that it in any way is bad, in fact I think it's amazing! It's just not for me. THe reason is that I kind of a editor and terminal guy (these days VS Code and Hyper) and having to write in a web broweser is just not for me. Not completely sure why, but drak theme plain editor and controlling versioning with git and terminal, just clicks for me.
+
+So enter static pages and generators.
+
+## Picking a generator, a theme and hosting
+
+There are many static generators out there ... Hugo
+
+Next thing is picking a theme... Cactus bacasuse of simplicity and I'm scandinavian
+
 
 ## How
 
-- Hugo getting started and theme
-    - Cactus bacasuse of simplicity and I'm scandinavian
-    - permalink to match existing url's
+* Install Go
+* Install Hugo
+* Download/clone/copy theme
+* Migrate content
+  * editing in existing posts to because of different interpretation of md i.ie `####`
+  * Images
+* Setup github pages
+  * docs folder - easiest
+  * publish dir
+  * cname
+* Add cloudflate for caching
+  * dns
+  * cache all (make sure to purge when publishing)
+
+## A few tweaks
+
+permalink to match existing url's
     
-    ```
+```
 [permalinks]
   post = "/:slug/"
   blog = "/:slug/"
-  ```
-
-    - editing in existing posts to because of different interpretation of md i.ie `####`
-    - Images
-- host on github pages
-    - docs folder - easiest
-    - publish dir
-    - cname
-    - dns
-- alias
-    - to maintain old urls and make discus work
-- discus
-  - [Redirect crawler](https://help.disqus.com/customer/portal/articles/286778-migration-tools]
-- cloudflare
-    - cache all (make sure to purge when publishing)
-
+```
 
 ## Resources
 

@@ -6,7 +6,7 @@ description = ""
 draft = true
 slug = "you-should-use-git-even-thoug-you-cant"
 tags = ["git", "versioncontrol", "tfs"]
-title = "You shoudl use git even though you can't"
+title = "You should use git even though you can't"
 
 +++
 
@@ -49,34 +49,34 @@ This is the natural choice if you want to have the whole history locally, there 
 
 in this case my networkdrive is x:
 
-``` 
+``` bash
 $ x:
 $ mkdir repos
 ```
 
 create folder for projoct to "host"
 
-```
+```bash
 $ mkdir my-project
 ```
 
 create new "bear" project
 
-```
+```bash
 $ cd my-project
-$git init —bare
+$ git init —bare
 ```
 
 add the network folder as origin to the working repo
 
-```
+```bash
 $ cd <path to the working repo>
 $ git remote add origin file://x:\Repos\my-project
 ```
 
 push to origin
 
-```
+```bash
 $ git push -u origin master
 ```
 
@@ -87,7 +87,7 @@ With git-tfs, TFS branches can be managed as regular branches it git. here goes
 Pull a branch from tfs:
 
 ```bash
-git tfs branch --init $/Repository/ProjectBranch
+$ git tfs branch --init $/Repository/ProjectBranch
 ```
 
 this will initialize a git branch with the n
