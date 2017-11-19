@@ -3,12 +3,12 @@ author = "Jakob Højgaard"
 date = 0001-01-01T00:00:00Z
 description = ""
 draft = true
-slug = "untitled"
-title = "(Untitled)"
+slug = "tweeks-to-a-ghost-blog"
+title = "Tweeks to a ghost blog"
 
 +++
 
-Tweeks to a ghost blog
+
 
 **Comments with Disqus**
 
