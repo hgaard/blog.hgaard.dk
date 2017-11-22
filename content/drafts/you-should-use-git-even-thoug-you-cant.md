@@ -16,7 +16,7 @@ As a consultant I work in places where source control is not always updated to t
 
 So when you can't take control of the infrastructure dont let that be an excuse to 
 
-* The TFS version control lacks basic concepts that impeads CI and CD 
+* The TFS version control lacks basic concepts that impeds CI and CD 
   * Lack of easy branching
     * Problem for building separate branches
     * Bigger problem for introducing short lived feature branches
