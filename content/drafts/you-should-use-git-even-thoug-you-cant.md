@@ -117,3 +117,18 @@ this will initialize a git branch with the n
 - Pusing to extra remote can be problematic
 - Always always use rebase - after all tfs only have one branch
 - tfs branches - try to avoid
+- Always use rebase - after all tfs only have one branch
+- tfs branches - try to avoid
+
+
+Well off you go now. Do it!
+
+------------------------------------------
+
+```
+git tfs list-remote-branches  http://aubriprtfs01:8080/tfs/mondialdevelopment
+```
+
+```
+git tfs branch --init $/Providers/ProviderServices-NServicebusPOC
+```
