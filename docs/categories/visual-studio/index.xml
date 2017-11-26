@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visual Studio on Bearded Code Monkey</title>
+    <title>Visual Studio on The Bearded Code Monkey</title>
     <link>https://blog.hgaard.dk/categories/visual-studio/</link>
-    <description>Recent content in Visual Studio on Bearded Code Monkey</description>
+    <description>Recent content in Visual Studio on The Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 05 Jan 2015 00:00:00 +0000</lastBuildDate>
