@@ -48,19 +48,13 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/authentication/</loc>
-    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hgaard.dk/categories/authentication/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/azure/</loc>
+    <loc>https://blog.hgaard.dk/tags/authentication/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -72,7 +66,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/azure-ad/</loc>
+    <loc>https://blog.hgaard.dk/tags/azure/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -84,7 +78,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/azure-ad-b2c/</loc>
+    <loc>https://blog.hgaard.dk/tags/azure-ad/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -96,13 +90,19 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/blogg/</loc>
-    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/azure-ad-b2c/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.hgaard.dk/categories/blogg/</loc>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/blogg/</loc>
     <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -114,13 +114,13 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/boot-camp/</loc>
+    <loc>https://blog.hgaard.dk/categories/boot-camp/</loc>
     <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/categories/boot-camp/</loc>
+    <loc>https://blog.hgaard.dk/tags/boot-camp/</loc>
     <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -132,20 +132,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/getting-started/</loc>
-    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hgaard.dk/categories/getting-started/</loc>
     <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/ghost/</loc>
-    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/getting-started/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -156,8 +150,8 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/git/</loc>
-    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/ghost/</loc>
+    <lastmod>2015-11-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -168,8 +162,8 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/nosql/</loc>
-    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/git/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -180,8 +174,8 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/openidconnect/</loc>
-    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/nosql/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,8 +186,8 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/os-x/</loc>
-    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/openidconnect/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -204,8 +198,8 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/realtime/</loc>
-    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/os-x/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,13 +210,19 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/rethinkdb/</loc>
+    <loc>https://blog.hgaard.dk/tags/realtime/</loc>
     <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.hgaard.dk/categories/rethinkdb/</loc>
+    <lastmod>2016-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/rethinkdb/</loc>
     <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -240,25 +240,25 @@
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/visual-studio/</loc>
-    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hgaard.dk/categories/visual-studio/</loc>
     <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.hgaard.dk/tags/windows-8.1/</loc>
-    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
+    <loc>https://blog.hgaard.dk/tags/visual-studio/</loc>
+    <lastmod>2015-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.hgaard.dk/categories/windows-8.1/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/windows-8.1/</loc>
     <lastmod>2014-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
