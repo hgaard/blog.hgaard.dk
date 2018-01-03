@@ -12,11 +12,11 @@ title = "You should use git even though you can't"
 
 ## Why
 
-As a consultant I work in places where source control is not always updated to the latest version. This sometimes means that git is not the preferred tool for source control. 
+As a consultant I work in places where source control is not always updated to the latest version. This sometimes means that git is not the preferred tool for source control.
 
 So when you can't take control of the infrastructure dont let that be an excuse to 
 
-* The TFS version control lacks basic concepts that impeds CI and CD 
+* The TFS version control lacks basic concepts that impeeds CI and CD
   * Lack of easy branching
     * Problem for building separate branches
     * Bigger problem for introducing short lived feature branches
@@ -25,7 +25,7 @@ Enter [git-tfs](http://git-tfs.com/)
 
 ## What
 
-Well as the name implies it's a git to tfs and tfs to git bridge. Which kinda makes it possible for you to work with regular git locally and "just" have tfs acts as your remote repository.
+Well as the name implies it's a git to tfs and tfs to git bridge. Which kinda makes it possible for you to work with regular git locally and "just" have tfs acts as your remote repository. There are a few caveats to be aware of and I have outlined some in the end of this post.
 
 ## How
 
@@ -40,50 +40,55 @@ Next step, to clone a repo and start working with the code. There are a few ways
 
 ### Clone the whole history
 
-This is the natural choice if you want to have the whole history locally, there are a few drawbacks though. First of all if the repo already has a lot of history this process will take a long time, as in minutes to potentially hours. 
+This is the natural choice if you want to have the whole history locally, there are a few drawbacks though. First of all if the repo already has a lot of history this process will take a long time, as in minutes to potentially hours.
 
 ```bash
 git tfs ... clone
 ```
 
+### Quick clone
+
 If you don't wan't to wait that long and can live without prevoius history, just quick clone. This will essentially just get latest and create a git repo from there.
 
-```
+```bash
 git tfs quick-clone
 ```
 
-ast options is somewhere in between. To clone from a specific changeset in TFS. And ofcourse the longer back you go the longer time it will take
+### Clone from specific changeset
 
-```
-git tfs clone ... -c no-of-changeset
+Last options is somewhere in between. To clone from a specific changeset in TFS. And of course the longer back you go the longer time it will take
+
+```bash
+git tfs clone ... -c id-of-changeset
 ```
 
 ## Backup of local repo
 
+When it comes to source code I'm very paranoid so having changes laying around on my local machine only, tend to freak me out quite fast
 
-    * THis is a sensitive area but important
-    * Can be to a network drive
+* This is a sensitive area but important
+* Can be to a network drive
 
 ### Create folder on network drive for repos
 
 in this case my networkdrive is x:
 
-``` bash
-$ x:
-$ mkdir repos
+```bash
+x:
+mkdir repos
 ```
 
 create folder for projoct to "host"
 
 ```bash
-$ mkdir my-project
+mkdir my-project
 ```
 
 create new "bear" project
 
 ```bash
-$ cd my-project
-$ git init —bare
+cd my-project
+git init —bare
 ```
 
 add the network folder as origin to the working repo
@@ -98,6 +103,10 @@ push to origin
 ```bash
 $ git push -u origin master
 ```
+
+
+
+## Managing branches
 
 A last useful nugget is managing branches. Managing branches have also been a a bit..
 
