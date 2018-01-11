@@ -20,23 +20,6 @@ My main gripe with  TFS or any centralized source control for that matter is the
 
 Luckily there is actually a tool to bridge this. Enter [git-tfs](http://git-tfs.com/)
 
---------------
-My main problems with are lack of local history and the poor branching story.
-
-For local history my 2 biggest issues are not being able to commit changes locally to give myself snapshots to go back to or branch out from, Second issue is not being able to distinguish my changes from changes caused by getting latest/merging with server version
-
-Branching is probably the biggest inhibitor, and this can be seen locally as well as remote. Not being able to create and share (feature) branches forst of all makes it harder to do.
-
-* The TFS version control lacks basic concepts that impeeds CI and CD mode
-
-  * Lack of easy branching
-    * Problem for building separate branches
-    * Bigger problem for introducing short lived feature branches
-
-----------------------------------------
-
-
-
 ## What
 
 Well as the name implies it's a git to tfs and tfs to git bridge. Which kinda makes it possible for you to work with regular git locally and "just" have tfs acts as your remote repository. There are a few caveats to be aware of and I have outlined some in the end of this post.
