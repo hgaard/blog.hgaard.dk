@@ -12,11 +12,13 @@ title = "You should use git even though you can't"
 
 ## Why
 
-As a consultant I work in places where source control is not always updated to the latest version. This sometimes means that git is not the preferred tool for source control.
+As a consultant, I sometimes work with clients that aren't using the best source control software that is currently available. This sometimes means that git is not the preferred tool for source control.
 
-But just because you can't control the infrastructure of your work place, don't let that be an excuse to stick with suboptimal tools to do your job. You are better than that!
+Even though you can't always control the infrastructure of your work place, it doesn't need to be an excuse to stick with suboptimal tools to do your job. You are better than that!
 
-My main gripe with  TFS or any centralized source control for that matter is the branching story, lack of easy branching and sharing of these really inhibits a good flexible CI/CD pipeline. The server part of this is a fundamental problem with choosing TFS and cannot be solved without changing away from TFS, hence I will not discuss this further in this post. Another almost as severe problem is the lack of local history and the lack flexibility caused by that. I guess I'm just no longer comfortable not being able to commit many times a day without having to think about how I might disturb my team mates.
+My main gripe with TFS (or any centralized source control system that I know of) is the branching story. The lack of easy *local* branching (and later, sharing of these) really inhibits my typical workflow. The fact that a centrally-controller server is the only possible way to create such a branch is a fundamental problem with TFS and it's tooling ecosystem, and cannot currently be solved without changing away from TFS. As a consequence, organisations that use TFS tend to treat the entire concept of a branch something that needs to be centrally controlled and managed.
+
+Another almost as severe problem is the lack of local history and the lack flexibility caused by that. I guess I'm just no longer comfortable not being able to commit many times a day without having to think about how I might disturb my team mates.
 
 Luckily there is actually a tool to bridge this. Enter [git-tfs](http://git-tfs.com/)
 
