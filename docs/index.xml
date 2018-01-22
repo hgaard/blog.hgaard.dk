@@ -98,5 +98,14 @@ Installation I installed with Chocolatey (remember to run cmd og PowerShell as a
 I&amp;rsquo;m starting this blog because I want to archive some my thoughts and programming experiments. Who know it might be useful later.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://blog.hgaard.dk/drafts/the-year-of-the-fox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.dk/drafts/the-year-of-the-fox/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

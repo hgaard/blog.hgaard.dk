@@ -1,11 +1,11 @@
 +++
 author = "Jakob Højgaard"
-categories = ["hugo"]
-date = 2017-12-10T12:00:00Z
+categories = ["hugo","blogging"]
+date = 2018-02-01T12:00:00Z
 description = ""
 draft = true
 slug = "..."
-tags = ["hugo"]
+tags = ["hugo", "blogging"]
 title = "Moving to Hugo and Github pages"
 
 +++

@@ -48,6 +48,10 @@
   </url>
   
   <url>
+    <loc>https://blog.hgaard.dk/drafts/the-year-of-the-fox/</loc>
+  </url>
+  
+  <url>
     <loc>https://blog.hgaard.dk/tags/authentication/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -128,6 +132,11 @@
   <url>
     <loc>https://blog.hgaard.dk/categories/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/drafts/</loc>
     <priority>0</priority>
   </url>
   
