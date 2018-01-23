@@ -1,7 +1,7 @@
 +++
 author = "Jakob Højgaard"
 categories = ["browsers", "firefox"]
-date = 2018-01-10T00:00:00Z
+date = 2018-02-10T00:00:00Z
 description = ""
 draft = true
 slug = "the-year-of-the-fox"

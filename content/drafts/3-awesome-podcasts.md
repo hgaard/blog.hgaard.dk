@@ -1,6 +1,6 @@
 +++
 author = "Jakob Højgaard"
-date = 2017-12-15T00:00:00Z
+date = 2018-02-05T00:00:00Z
 description = ""
 draft = true
 slug = "3-awesome-podcasts"
