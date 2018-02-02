@@ -1,6 +1,6 @@
 +++
 author = "Jakob Højgaard"
-date = 2018-01-01T00:00:00Z
+date = 2018-05-01T00:00:00Z
 description = ""
 draft = true
 slug = "docker-for-dev-dependencies"

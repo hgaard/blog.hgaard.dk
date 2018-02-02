@@ -1,9 +1,9 @@
 +++
 author = "Jakob Højgaard"
 categories = ["dddbrisbane", "microservice", "monolith", "opinion"]
-date = 2018-01-30T00:00:00Z
+date = 2018-02-01T00:00:00Z
 description = ""
-draft = true
+draft = false
 slug = "avoid-the-microservice-fallacy"
 tags = ["dddbrisbane", "microservice", "monolith", "opinion"]
 title = "Avoid The Microservice Fallacy"
