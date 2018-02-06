@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.hgaard.dk/avoid-the-microservice-fallacy/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.hgaard.dk/you-should-use-git-even-thoug-you-cant/</loc>
     <lastmod>2018-01-23T00:00:00+00:00</lastmod>
   </url>
@@ -114,7 +119,7 @@
   
   <url>
     <loc>https://blog.hgaard.dk/blog/</loc>
-    <lastmod>2018-01-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,6 +138,18 @@
   <url>
     <loc>https://blog.hgaard.dk/categories/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/dddbrisbane/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/categories/dddbrisbane/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,6 +190,30 @@
   </url>
   
   <url>
+    <loc>https://blog.hgaard.dk/tags/microservice/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/categories/microservice/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/monolith/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/categories/monolith/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hgaard.dk/tags/nosql/</loc>
     <lastmod>2016-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -193,6 +234,18 @@
   <url>
     <loc>https://blog.hgaard.dk/categories/openidconnect/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/tags/opinion/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hgaard.dk/categories/opinion/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -252,7 +305,7 @@
   
   <url>
     <loc>https://blog.hgaard.dk/</loc>
-    <lastmod>2018-01-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
