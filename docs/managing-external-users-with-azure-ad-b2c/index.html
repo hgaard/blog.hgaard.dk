@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Jakob Højgaard">
 <meta name="description" content="Code and things related">
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Managing external users with Azure AD B2C</title>
 <link rel="shortcut icon" href="https://blog.hgaard.dk/images/favicon.ico">
 <link rel="stylesheet" href="https://blog.hgaard.dk/css/style.css">
@@ -26,22 +26,8 @@
 What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.hgaard.dk/managing-external-users-with-azure-ad-b2c/" />
-
-
-
 <meta property="article:published_time" content="2016-04-21T00:00:00&#43;00:00"/>
-
 <meta property="article:modified_time" content="2016-04-21T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -58,7 +44,8 @@ What is Azure AD B2C First of all I might need to explain a few things, like wha
 
 <meta itemprop="keywords" content="Azure,Azure AD,Azure AD B2C,OpenIdConnect,Authentication," />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Managing external users with Azure AD B2C"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Managing external users with Azure AD B2C"/>
 <meta name="twitter:description" content="The last few weeks I have been working with a customer to implement Azure AD B2C login for their internal systems and I thought I might share my experience with you.
 What is Azure AD B2C First of all I might need to explain a few things, like what B2C is (assuming here that you know what Azure and AD are) and what kind of problem I am solving with it."/>
 <meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
@@ -69,6 +56,12 @@ What is Azure AD B2C First of all I might need to explain a few things, like wha
     <nav class="main-nav">
 	
 		<a href='https://blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+	
+	
+	
+	<a href="/about">About</a>
+
+	<a href="https://resume.hgaard.dk">Resume</a>
 	
 
 	
@@ -126,7 +119,7 @@ What is Azure AD B2C First of all I might need to explain a few things, like wha
 
 <p>In this post i will describe how we solved the first two scenarios and I might write about the latter in another post when I get around to actually writing the code. As I mentioned, the setup required internal as well as external users granted access to the applications. B2C only provides a way to integrate identities from other (social media) identity provides and the build in users. It does not provide any way to synchronize the B2C AD with an AD through technology like Azure AD Connect. Nor does it provide a way to federate with other AD based identity providers like &ldquo;regular&rdquo; Azure AD (which by the way is called B2E - or business to employee) or internal AD through ADFS. Thus the applications I work on need to know 2 identity providers. External user resides in B2C and internal users in an B2E existing instance. For info about how to setup B2C and the concepts of policies, please visit the <a href="https://azure.microsoft.com/en-us/documentation/services/active-directory-b2c/">B2C documentation</a>. The getting started sections are excellent.</p>
 
-<p>Just to recap in a simple authentication scenario, have a look at the illustration here<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>
+<p>Just to recap in a simple authentication scenario, have a look at the illustration here<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
 <img src="/../images/basics_of_auth_in_aad.png" alt="Azure AD login scenario" /></p>
 
 <h3 id="initial-assumption">Initial assumption</h3>
@@ -194,7 +187,7 @@ Hmmm, I could have started the registration in the new portal, but I decided I h
 
 <h3 id="producing-bearer-tokens">Producing Bearer tokens</h3>
 
-<p>In order to call the web api it&rsquo;s necessary to provide an access token. The acquisition of the access token follows after the sign in flow and the whole protocol is illustrated in the figrure below<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+<p>In order to call the web api it&rsquo;s necessary to provide an access token. The acquisition of the access token follows after the sign in flow and the whole protocol is illustrated in the figrure below<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <p><img src="/../images/web_app_to_web_api.png" alt="Acquiring an access token" /></p>
 
@@ -300,7 +293,7 @@ I know there are several and more mature alternatives like <a href="http://auth0
 </footer>
 
 <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -384,7 +377,7 @@ I know there are several and more mature alternatives like <a href="http://auth0
     
     <p class="small">
     
-        © Copyright 2018 Jakob Højgaard
+        © Copyright 2020 Jakob Højgaard
     
     </p>
 </footer>
@@ -398,14 +391,17 @@ I know there are several and more mature alternatives like <a href="http://auth0
 
 
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-4800839-2', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-4800839-2', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 

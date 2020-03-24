@@ -17,6 +17,11 @@ disqusShortname = "spf13"
 	twitter = "Your Twitter account"
 	enableRSS = true
 
+	# Nav
+	enableResume = true
+	resumeLink = "https://resume.hgaard.dk"
+	
+
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
 	# linking local files with their path relative to the static folder, e.g. "css/styles.css"
 	customCSS = []

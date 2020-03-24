@@ -25,6 +25,11 @@ paginate = 6
 	twitter = "hgaard"
 	enableRSS = true
 
+	# Nav
+	enableResume = true
+	resumeLink = "https://resume.hgaard.dk"
+	aboutLink = "/about"
+
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
 	# linking local files with their path relatigiove to the static folder, e.g. "css/styles.css"
 	customCSS = []

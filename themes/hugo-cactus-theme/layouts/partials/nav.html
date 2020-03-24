@@ -2,6 +2,12 @@
 	{{ if not .IsHome }}
 		<a href='{{ .Site.BaseURL }}'> <span class="arrow">←</span>{{ .Site.Params.home | default "Home" }}</a>
 	{{ end }}
+	
+	
+	<a href="{{ .Site.Params.aboutLink }}">{{ .Site.Params.resume | default "About" }}</a>
+
+	<a href="{{ .Site.Params.resumeLink }}">{{ .Site.Params.resume | default "Resume" }}</a>
+	
 
 	{{ range .Site.Menus.main }}
  		<a href='{{ .URL }}'>{{ .Name }}</a>
