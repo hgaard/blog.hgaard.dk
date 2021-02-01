@@ -6,39 +6,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Jakob Højgaard">
 <meta name="description" content="Code and things related">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>Finding big files in a git repo on windows</title>
-<link rel="shortcut icon" href="https://blog.hgaard.dk/images/favicon.ico">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/style.css">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/highlight.css">
+<link rel="shortcut icon" href="https://blog.hgaard.com/images/favicon.ico">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/style.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/highlight.css">
 
 
 
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/monosocialiconsfont.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/monosocialiconsfont.css">
 
 
 
-<link href="https://blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
+<link href="https://blog.hgaard.com/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
 
 
 <meta property="og:title" content="Finding big files in a git repo on windows" />
 <meta property="og:description" content="I recently joined a project that had been working on a product for a few years already. The team had used TFS for source control until just a few weeks before I joined. Because of external circumstances the team had decided to migrate the complete source tree to git (still hosted on TFS though).
 After the migration to the new git repository it turned out that the repository was quite big, to more precise it was around 1,2 GB." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.hgaard.dk/finding-big-files-in-a-git-repo-on-windows/" />
-<meta property="article:published_time" content="2014-10-30T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-10-30T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="https://blog.hgaard.com/finding-big-files-in-a-git-repo-on-windows/" />
+<meta property="article:published_time" content="2014-10-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-10-30T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="Finding big files in a git repo on windows">
 <meta itemprop="description" content="I recently joined a project that had been working on a product for a few years already. The team had used TFS for source control until just a few weeks before I joined. Because of external circumstances the team had decided to migrate the complete source tree to git (still hosted on TFS though).
 After the migration to the new git repository it turned out that the repository was quite big, to more precise it was around 1,2 GB.">
-
-
-<meta itemprop="datePublished" content="2014-10-30T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2014-10-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="984">
+<meta itemprop="datePublished" content="2014-10-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2014-10-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="983">
 
 
 
@@ -55,19 +52,19 @@ After the migration to the new git repository it turned out that the repository 
 <body>
     <nav class="main-nav">
 	
-		<a href='https://blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+		<a href='https://blog.hgaard.com/'> <span class="arrow">←</span>Home</a>
 	
 	
 	
 	<a href="/about">About</a>
 
-	<a href="https://resume.hgaard.dk">Resume</a>
+	<a href="https://resume.hgaard.com">Resume</a>
 	
 
 	
 
 	
-		<a class="cta" href="https://blog.hgaard.dk/index.xml">Subscribe</a>
+		<a class="cta" href="https://blog.hgaard.com/index.xml">Subscribe</a>
 	
 </nav>
 
@@ -85,103 +82,72 @@ After the migration to the new git repository it turned out that the repository 
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>I recently joined a project that had been working on a product for a few years already. The team had used TFS for source control until just a few weeks before I joined. Because of external circumstances the team had decided to migrate the complete source tree to git (still hosted on TFS though).</p>
-
+        <p>I recently joined a project that had been working on a product for a few years already. The team had used TFS for source control until just a few weeks before I joined. Because of external circumstances the team had decided to migrate the complete source tree to git (still hosted on TFS though).</p>
 <p>After the migration to the new git repository it turned out that the repository was quite big, to more precise it was around 1,2 GB. This could of course just be ignored since TFS repositories with a few years of age can easily grow to that size - we stick anything in there don&rsquo;t we. Anyway with a  recent <a href="http://thedailywtf.com/articles/Forever-Alone">story in mind</a> and because we had to do a lot of cloning of the repository, I decided to have a closer look at the repo to see if we had any big files checked in by mistake.</p>
-
 <h2 id="analyzing-the-repository">Analyzing the repository</h2>
-
 <p>I found <a href="http://naleid.com/blog/2012/01/17/finding-and-purging-big-files-from-git-history">this</a> article describing exactly this task, but the article described the process with bash commands and I work work mainly on Windows and all of my team mates do too. So I thought this might just be the case for me to do a little diving into more advanced PowerShell. It turned out to take a bit longer than expected. After all git still returns text not objects even on windows.</p>
-
 <h3 id="files-and-hashes">Files and Hashes</h3>
-
 <p>To begin with, I use poshgit (installed with <a href="http://chocolatey.org">Chocolatey</a>) to interact with git from PowerShell, and this is what i came up with after a bit/lot of help from my good college Uffe.</p>
-
 <p>First, get all the hashes of files in the repo.</p>
-
 <pre><code>$sortedHashes = git rev-list --objects --all | sls &quot;^\w+\s\w&quot; | ConvertFrom-Csv -Delimiter ' ' -head hash,path | %{$h=@{}}{$h[$_.hash]=$_.path}{$h}
 </code></pre>
-
 <p>Do a gc.</p>
-
 <pre><code>git gc
 </code></pre>
-
 <p>Get the path of the index file.</p>
-
 <pre><code>$indexFile = &quot;.git\objects\pack\&quot; + (&quot;.git\objects\pack&quot; | gci -Filter 'pack-*.idx')
 </code></pre>
-
 <p>List all files ever in the repo ordered by size (this does not contain the filename and path).</p>
-
 <pre><code>$bigfiles = git verify-pack -v $indexFile | %{$_  -creplace '\s+', ','} | sls &quot;^\w+,blob\W+[0-9]+,[0-9]+,[0-9]+$&quot; | ConvertFrom-Csv -Header hash, type, size | %{New-Object pscustomobject -Property @{Hash=$_.hash; Size=[int]$_.size}} | sort size -Descending
 </code></pre>
-
 <p>Match the hashes from the list of big files with the filenames from the sorted hashes to produce a list of the biggest files ever in the repo and send to a csv file.</p>
-
 <pre><code>$bigfiles | select size,@{n='Name';e={$sortedHashes[$_.hash]}} | Export-Csv -Delimiter ';' -Path &quot;big-files.csv&quot; -NoTypeInformation
 </code></pre>
-
 <p>It turned out that there was a actually a big (~10 MB) zip file in the repo i quite a few versions, but no longer in the index. Next step - get rid of it!</p>
-
 <h2 id="rewriting-history">Rewriting history</h2>
-
 <p>Git has a very nice tool for this - filter-branch. Here it important to be very cautious. When doing these kind of operations it is very important delete working copies of the remote repo and do a fresh clone after the changes have been pushed back. Now let&rsquo;s get to it.</p>
-
 <p>First, checkout all remote branches locally.</p>
-
 <pre><code>git branch -a | sls -CaseSensitive remotes |  sls -CaseSensitive -NotMatch HEAD | sls -CaseSensitive -NotMatch master |%{
 &quot;git branch --track $($_ -replace '^\s*remotes/origin/','') $_&quot; | iex
 }
 </code></pre>
-
 <p>Remove the identified file and rewrite commit history.</p>
-
 <pre><code>git filter-branch --prune-empty --index-filter 'git rm -rf --cached --ignore-unmatch THE-FILE-TO-REMOVE' --tag-name-filter cat -- --all
 </code></pre>
-
 <p>This can potentially take quite a bit of time&hellip;
 Now since git does makes quite an effort not to loose data all the removed files are not actually yet removed from the repo, they are just not cleaned up yet. In order to fix this it is necessary to expire all reflogs and do a gc with the aggressive flag set as here</p>
-
 <pre><code>git rm -rf .git/refs/original/
 git reflog expire --expire=now --all
 git gc --prune=now --aggressive
 </code></pre>
-
 <p>Success! My repo has shirked to about a third of the size before the cleanup.
 Last step - push back the repository to TFS.</p>
-
 <pre><code>git push --force --all
 </code></pre>
-
 <p>A few things started to go wrong here. The push stopped at about 7% of the upload and never resumed. After a bit of googling i realized it might be because of https. Luckily we also have a http endpoint inside our company firewall, so I just changed origin to use the default TFS http endpoint at port 8080.</p>
-
 <pre><code>git remote set-url origin http://tfs.Endpoint:8080/tfs/path.to.repo
 </code></pre>
-
 <p>This made the upload succeed. Everything look just as they should, I could browse the code on the TFS website and i made a new clone just as a last check. This is when the second strange thing happened. When cloning the repo it was the same size as before the cleanup!</p>
-
 <p>This seems quite odd and i have not yet found an answer to why this is. I know that running the expire reflog and gc commands on the newly cloned repo will shrink it to the same size as the one I force pushed, but other than that, this is where i got to. I will file a bug report with Microsoft and keep you updated.</p>
-
 <p><strong>Update:</strong>
-I Just got an <a href="http://connect.microsoft.com/VisualStudio/feedback/details/1019193/unable-to-clean-a-git-repo-in-tfs">answer from microsoft</a> and I&rsquo;ll paste their answer here:
-&gt; TFS does not currently perform garbage collection on git objects. We are aware that this is an important feature to have and we are tracking it in our backlogs. Currently, if you perform a git clone, TFS attempts to optimize for processing speed and hands you all objects that were associated with that repo without filtration, under the assumption that almost all of it will be live/reachable. After a filter operation like the one you performed, it might be prudent to delete the entire git repository from your TFS server and create a new one using the locally pruned and repacked git repo. All the standard caveats when deleting a repository apply - you lose all permission information and any TFS state associated with that repository and you will have to recreate them appropriately.</p>
+I Just got an <a href="http://connect.microsoft.com/VisualStudio/feedback/details/1019193/unable-to-clean-a-git-repo-in-tfs">answer from microsoft</a> and I&rsquo;ll paste their answer here:</p>
+<blockquote>
+<p>TFS does not currently perform garbage collection on git objects. We are aware that this is an important feature to have and we are tracking it in our backlogs. Currently, if you perform a git clone, TFS attempts to optimize for processing speed and hands you all objects that were associated with that repo without filtration, under the assumption that almost all of it will be live/reachable. After a filter operation like the one you performed, it might be prudent to delete the entire git repository from your TFS server and create a new one using the locally pruned and repacked git repo. All the standard caveats when deleting a repository apply - you lose all permission information and any TFS state associated with that repository and you will have to recreate them appropriately.</p>
+</blockquote>
 
     </section>
 </article>
 
 <footer id="post-meta" class="clearfix">
     <a href="https://twitter.com/hgaard">
-    <img class="avatar" src="https://blog.hgaard.dk/images/avatar.png">
+    <img class="avatar" src="https://blog.hgaard.com/images/avatar.png">
     <div>
         <span class="dark">Jakob Højgaard</span>
         <span>Software developers swiss-army knife, father of three, brewer, rookie surfer</span>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.dk%2ffinding-big-files-in-a-git-repo-on-windows%2f - Finding%20big%20files%20in%20a%20git%20repo%20on%20windows by @hgaard"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.com%2ffinding-big-files-in-a-git-repo-on-windows%2f - Finding%20big%20files%20in%20a%20git%20repo%20on%20windows by @hgaard"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -279,15 +245,15 @@ I Just got an <a href="http://connect.microsoft.com/VisualStudio/feedback/detail
     
     <p class="small">
     
-        © Copyright 2020 Jakob Højgaard
+        © Copyright 2021 Jakob Højgaard
     
     </p>
 </footer>
 
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://blog.hgaard.dk/js/main.js"></script>
-<script src="https://blog.hgaard.dk/js/highlight.js"></script>
+<script src="https://blog.hgaard.com/js/main.js"></script>
+<script src="https://blog.hgaard.com/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 

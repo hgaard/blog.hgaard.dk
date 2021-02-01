@@ -1,220 +1,216 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on The Bearded Code Monkey</title>
-    <link>https://blog.hgaard.dk/categories/</link>
+    <link>https://blog.hgaard.com/categories/</link>
     <description>Recent content in Categories on The Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.hgaard.dk/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 13 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hgaard.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Authentication</title>
-      <link>https://blog.hgaard.dk/categories/authentication/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      <title>podcast</title>
+      <link>https://blog.hgaard.com/categories/podcast/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/authentication/</guid>
+      <guid>https://blog.hgaard.com/categories/podcast/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Azure</title>
-      <link>https://blog.hgaard.dk/categories/azure/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure Ad</title>
-      <link>https://blog.hgaard.dk/categories/azure-ad/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/azure-ad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure Ad B2c</title>
-      <link>https://blog.hgaard.dk/categories/azure-ad-b2c/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/azure-ad-b2c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blogg</title>
-      <link>https://blog.hgaard.dk/categories/blogg/</link>
-      <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/blogg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Boot Camp</title>
-      <link>https://blog.hgaard.dk/categories/boot-camp/</link>
-      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/boot-camp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dddbrisbane</title>
-      <link>https://blog.hgaard.dk/categories/dddbrisbane/</link>
+      <title>dddbrisbane</title>
+      <link>https://blog.hgaard.com/categories/dddbrisbane/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/dddbrisbane/</guid>
+      <guid>https://blog.hgaard.com/categories/dddbrisbane/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservice</title>
+      <link>https://blog.hgaard.com/categories/microservice/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monolith</title>
+      <link>https://blog.hgaard.com/categories/monolith/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/monolith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opinion</title>
+      <link>https://blog.hgaard.com/categories/opinion/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://blog.hgaard.com/categories/git/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tfs</title>
+      <link>https://blog.hgaard.com/categories/tfs/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/tfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>versioncontrol</title>
+      <link>https://blog.hgaard.com/categories/versioncontrol/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/versioncontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>https://blog.hgaard.dk/categories/getting-started/</link>
+      <link>https://blog.hgaard.com/categories/getting-started/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/getting-started/</guid>
+      <guid>https://blog.hgaard.com/categories/getting-started/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ghost</title>
-      <link>https://blog.hgaard.dk/categories/ghost/</link>
-      <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/ghost/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://blog.hgaard.dk/categories/git/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microservice</title>
-      <link>https://blog.hgaard.dk/categories/microservice/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/microservice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Monolith</title>
-      <link>https://blog.hgaard.dk/categories/monolith/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/monolith/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nosql</title>
-      <link>https://blog.hgaard.dk/categories/nosql/</link>
+      <title>NoSql</title>
+      <link>https://blog.hgaard.com/categories/nosql/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/nosql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Openidconnect</title>
-      <link>https://blog.hgaard.dk/categories/openidconnect/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/openidconnect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Opinion</title>
-      <link>https://blog.hgaard.dk/categories/opinion/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/opinion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Os X</title>
-      <link>https://blog.hgaard.dk/categories/os-x/</link>
-      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/os-x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Podcast</title>
-      <link>https://blog.hgaard.dk/categories/podcast/</link>
-      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.dk/categories/podcast/</guid>
+      <guid>https://blog.hgaard.com/categories/nosql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Realtime</title>
-      <link>https://blog.hgaard.dk/categories/realtime/</link>
+      <link>https://blog.hgaard.com/categories/realtime/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/realtime/</guid>
+      <guid>https://blog.hgaard.com/categories/realtime/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rethinkdb</title>
-      <link>https://blog.hgaard.dk/categories/rethinkdb/</link>
+      <title>RethinkDB</title>
+      <link>https://blog.hgaard.com/categories/rethinkdb/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/rethinkdb/</guid>
+      <guid>https://blog.hgaard.com/categories/rethinkdb/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tfs</title>
-      <link>https://blog.hgaard.dk/categories/tfs/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Authentication</title>
+      <link>https://blog.hgaard.com/categories/authentication/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/tfs/</guid>
+      <guid>https://blog.hgaard.com/categories/authentication/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Versioncontrol</title>
-      <link>https://blog.hgaard.dk/categories/versioncontrol/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Azure</title>
+      <link>https://blog.hgaard.com/categories/azure/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/versioncontrol/</guid>
+      <guid>https://blog.hgaard.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure AD</title>
+      <link>https://blog.hgaard.com/categories/azure-ad/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/azure-ad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure AD B2C</title>
+      <link>https://blog.hgaard.com/categories/azure-ad-b2c/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/azure-ad-b2c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenIdConnect</title>
+      <link>https://blog.hgaard.com/categories/openidconnect/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/openidconnect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogg</title>
+      <link>https://blog.hgaard.com/categories/blogg/</link>
+      <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/blogg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ghost</title>
+      <link>https://blog.hgaard.com/categories/ghost/</link>
+      <pubDate>Thu, 12 Nov 2015 12:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/ghost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Studio</title>
-      <link>https://blog.hgaard.dk/categories/visual-studio/</link>
+      <link>https://blog.hgaard.com/categories/visual-studio/</link>
       <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/visual-studio/</guid>
+      <guid>https://blog.hgaard.com/categories/visual-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boot Camp</title>
+      <link>https://blog.hgaard.com/categories/boot-camp/</link>
+      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/boot-camp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS X</title>
+      <link>https://blog.hgaard.com/categories/os-x/</link>
+      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.hgaard.com/categories/os-x/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows 8.1</title>
-      <link>https://blog.hgaard.dk/categories/windows-8.1/</link>
+      <link>https://blog.hgaard.com/categories/windows-8.1/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/categories/windows-8.1/</guid>
+      <guid>https://blog.hgaard.com/categories/windows-8.1/</guid>
       <description></description>
     </item>
     

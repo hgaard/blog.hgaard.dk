@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Podcast on The Bearded Code Monkey</title>
-    <link>https://blog.hgaard.dk/tags/podcast/</link>
-    <description>Recent content in Podcast on The Bearded Code Monkey</description>
+    <title>podcast on The Bearded Code Monkey</title>
+    <link>https://blog.hgaard.com/tags/podcast/</link>
+    <description>Recent content in podcast on The Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 13 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.hgaard.dk/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 13 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hgaard.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3 awesome podcast episodes</title>
-      <link>https://blog.hgaard.dk/3-awesome-podcasts/</link>
+      <link>https://blog.hgaard.com/3-awesome-podcasts/</link>
       <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/3-awesome-podcasts/</guid>
+      <guid>https://blog.hgaard.com/3-awesome-podcasts/</guid>
       <description>I recently went through my draft posts and found this little post about 3 podcasts, I at the time thought were quite awesome. For some reason, I never got around to publishing it, but since I still think they are quite awesome here they are:
 I thought I might share a few good podcasts I&amp;rsquo;ve listened to recently.
  Yehuda Katz - Rails/Ember/Rust Jose Valim - Elixir  Matz (Yukihiro Matsumoto) - Ruby  The main reason I found these podcast interesting is that it tells the story behind some very prominent people in our industry and for 2 of them, it seems they started in programming by pure accident and turned out awesome!</description>

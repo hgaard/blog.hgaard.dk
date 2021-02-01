@@ -6,37 +6,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Jakob Højgaard">
 <meta name="description" content="Code and things related">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>Installing Windows 8.1 on my mac</title>
-<link rel="shortcut icon" href="https://blog.hgaard.dk/images/favicon.ico">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/style.css">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/highlight.css">
+<link rel="shortcut icon" href="https://blog.hgaard.com/images/favicon.ico">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/style.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/highlight.css">
 
 
 
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/monosocialiconsfont.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/monosocialiconsfont.css">
 
 
 
-<link href="https://blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
+<link href="https://blog.hgaard.com/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
 
 
 <meta property="og:title" content="Installing Windows 8.1 on my mac" />
 <meta property="og:description" content="I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.hgaard.dk/setting-up-my-new-mac/" />
-<meta property="article:published_time" content="2014-11-17T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-11-17T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="https://blog.hgaard.com/setting-up-my-new-mac/" />
+<meta property="article:published_time" content="2014-11-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-17T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="Installing Windows 8.1 on my mac">
 <meta itemprop="description" content="I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record.">
-
-
-<meta itemprop="datePublished" content="2014-11-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2014-11-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="689">
+<meta itemprop="datePublished" content="2014-11-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2014-11-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="682">
 
 
 
@@ -52,19 +49,19 @@
 <body>
     <nav class="main-nav">
 	
-		<a href='https://blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+		<a href='https://blog.hgaard.com/'> <span class="arrow">←</span>Home</a>
 	
 	
 	
 	<a href="/about">About</a>
 
-	<a href="https://resume.hgaard.dk">Resume</a>
+	<a href="https://resume.hgaard.com">Resume</a>
 	
 
 	
 
 	
-		<a class="cta" href="https://blog.hgaard.dk/index.xml">Subscribe</a>
+		<a class="cta" href="https://blog.hgaard.com/index.xml">Subscribe</a>
 	
 </nav>
 
@@ -81,11 +78,11 @@
         
         
             
-                <a href="https://blog.hgaard.dk/tags/boot-camp">Boot Camp</a>
+                <a href="https://blog.hgaard.com/tags/boot-camp">Boot Camp</a>
             
-                <a href="https://blog.hgaard.dk/tags/os-x">OS X</a>
+                <a href="https://blog.hgaard.com/tags/os-x">OS X</a>
             
-                <a href="https://blog.hgaard.dk/tags/windows-8.1">Windows 8.1</a>
+                <a href="https://blog.hgaard.com/tags/windows-8.1">Windows 8.1</a>
             
         
         
@@ -93,23 +90,41 @@
     </header>
     <section id="post-body">
         <p>I recently got a new machine. And since i do a fair bit of iOS development (through Xamarin) I chose to get a mac. However, since I still do most of my work on Windows I would like to be able to boot it directly into Windows. No problem I thought, mac has Bootcamp. I&rsquo;ll just install the newest version of Windows using the Bootcamp assistant. Well everything went well until the Windows installation had to update the boot record. I popped a message box stating that &ldquo;Could not update the boot configuration&rdquo;. No way to continue!</p>
-
 <p>After quite a bit og googling and reading I found that I found a working solution <a href="https://discussions.apple.com/thread/5474320?start=585&amp;tstart=0">here</a> (on page 40!). It&rsquo;s posted by a guy called <strong>KNNSpeed</strong>. For convenience i&rsquo;ll republish the solution here:</p>
-
 <blockquote>
-<p>1) Using an .iso of Windows 8.1 I bought from the Microsoft Online Store, I copied the .iso to my rMBP and pointed Bootcamp to it to make the USB installer. The image created is slightly over 4GB, so it&rsquo;s important to use an 8GB flashdrive. There have been reports of issues caused by using 4GB flashdrives, so 8GB or larger is the way to go.</p>
-
-<p>2) After letting the Boot Camp Assistant do its thing (I personally use a <sup>50</sup>&frasl;<sub>50</sub> split, but more importantly I checked all 3 checkboxes) and entering my password to install the helper tool (if you don&rsquo;t use a password you probably won&rsquo;t see the helper tool prompt), I rebooted and went right into the EFI Boot option in the boot manager (the hold-down-ALT-at-bootup menu).</p>
-
-<p>3) In Windows 8.1&rsquo;s setup, I got an error about installing over the BOOTCAMP partition. No problem, if we&rsquo;re installing Windows8.1 in native EFI mode, we can&rsquo;t use a single partition anyway since Windows needs to make an extra MSR partition. It can&rsquo;t do that when BOOTCAMP fills up all the empty space! Solution: delete that BOOTCAMP partition right there in Windows setup, and click &ldquo;New.&rdquo; You should be able to make an NTFS partition that will fit right into the empty space you just made, and you&rsquo;ll know you&rsquo;re on the right track because there&rsquo;ll be a second partition labelled MSR that gets created, too.</p>
-
-<p>4) Continue to install Windows as normal in the NTFS partition you just made (the non-MSR one). This is why I used the USB method; DVDs are so slow when doing Windows setup. Anyways, you should get the classic &ldquo;Could not update the boot configuration&rdquo; error at the end. DON&rsquo;T PANIC, the next step fixes that.</p>
-
-<p>5) Click OK or Continue or whatever it says (it&rsquo;s been a while), and wait for your MacBook Pro to reboot, and go to the ALT menu. Now turn off your computer (or boot into OS X and shut it down, whatever&ndash;just turn it off without doing anything), turn it back on and do a PRAM/NVRAM reset (Hold Command+Option+P+R until you hear the chime play a second time), and go back to the ALT menu. Try not to miss the menu and boot into OS X, since I don&rsquo;t know if that&rsquo;ll mess anything up (it might, and you&rsquo;ll have to NVRAM reset again). Go right back into EFI Boot and proceed with Windows setup as normal.</p>
-
-<p>6) Windows should install with no errors, and when you reboot you now need to go right into the &ldquo;Windows&rdquo; drive in the ALT boot menu, as you&rsquo;re done with booting from the flashdrive. Also, it&rsquo;s OK if you go into OS X by accident now&ndash;just don&rsquo;t remove the flashdrive yet. If Windows reboots during this part of the installation, just use the ALT boot menu to go back into the Windows drive (remember: this isn&rsquo;t the &ldquo;Windows&rdquo; flashdrive icon&ndash;it&rsquo;s the Windows hard drive icon).</p>
-
-<p>7) Once Windows is done installing, it&rsquo;ll ask you to install the Bootcamp drivers. Go ahead and do that and reboot into Windows. Now go into &ldquo;This PC&rdquo; or &ldquo;Computer&rdquo; or whatever Microsoft renamed &ldquo;My Computer&rdquo; to and run &ldquo;Setup.exe&rdquo; from the flashdrive&rsquo;s WindowsSupport folder to install the Bootcamp drivers again. Apparently the setup that runs earlier misses a few things for some reason.</p>
+<ol>
+<li>Using an .iso of Windows 8.1 I bought from the Microsoft Online Store, I copied the .iso to my rMBP and pointed Bootcamp to it to make the USB installer. The image created is slightly over 4GB, so it&rsquo;s important to use an 8GB flashdrive. There have been reports of issues caused by using 4GB flashdrives, so 8GB or larger is the way to go.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>After letting the Boot Camp Assistant do its thing (I personally use a 50/50 split, but more importantly I checked all 3 checkboxes) and entering my password to install the helper tool (if you don&rsquo;t use a password you probably won&rsquo;t see the helper tool prompt), I rebooted and went right into the EFI Boot option in the boot manager (the hold-down-ALT-at-bootup menu).</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>In Windows 8.1&rsquo;s setup, I got an error about installing over the BOOTCAMP partition. No problem, if we&rsquo;re installing Windows8.1 in native EFI mode, we can&rsquo;t use a single partition anyway since Windows needs to make an extra MSR partition. It can&rsquo;t do that when BOOTCAMP fills up all the empty space! Solution: delete that BOOTCAMP partition right there in Windows setup, and click &ldquo;New.&rdquo; You should be able to make an NTFS partition that will fit right into the empty space you just made, and you&rsquo;ll know you&rsquo;re on the right track because there&rsquo;ll be a second partition labelled MSR that gets created, too.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>Continue to install Windows as normal in the NTFS partition you just made (the non-MSR one). This is why I used the USB method; DVDs are so slow when doing Windows setup. Anyways, you should get the classic &ldquo;Could not update the boot configuration&rdquo; error at the end. DON&rsquo;T PANIC, the next step fixes that.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="5">
+<li>Click OK or Continue or whatever it says (it&rsquo;s been a while), and wait for your MacBook Pro to reboot, and go to the ALT menu. Now turn off your computer (or boot into OS X and shut it down, whatever&ndash;just turn it off without doing anything), turn it back on and do a PRAM/NVRAM reset (Hold Command+Option+P+R until you hear the chime play a second time), and go back to the ALT menu. Try not to miss the menu and boot into OS X, since I don&rsquo;t know if that&rsquo;ll mess anything up (it might, and you&rsquo;ll have to NVRAM reset again). Go right back into EFI Boot and proceed with Windows setup as normal.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="6">
+<li>Windows should install with no errors, and when you reboot you now need to go right into the &ldquo;Windows&rdquo; drive in the ALT boot menu, as you&rsquo;re done with booting from the flashdrive. Also, it&rsquo;s OK if you go into OS X by accident now&ndash;just don&rsquo;t remove the flashdrive yet. If Windows reboots during this part of the installation, just use the ALT boot menu to go back into the Windows drive (remember: this isn&rsquo;t the &ldquo;Windows&rdquo; flashdrive icon&ndash;it&rsquo;s the Windows hard drive icon).</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="7">
+<li>Once Windows is done installing, it&rsquo;ll ask you to install the Bootcamp drivers. Go ahead and do that and reboot into Windows. Now go into &ldquo;This PC&rdquo; or &ldquo;Computer&rdquo; or whatever Microsoft renamed &ldquo;My Computer&rdquo; to and run &ldquo;Setup.exe&rdquo; from the flashdrive&rsquo;s WindowsSupport folder to install the Bootcamp drivers again. Apparently the setup that runs earlier misses a few things for some reason.</li>
+</ol>
 </blockquote>
 
     </section>
@@ -117,14 +132,14 @@
 
 <footer id="post-meta" class="clearfix">
     <a href="https://twitter.com/hgaard">
-    <img class="avatar" src="https://blog.hgaard.dk/images/avatar.png">
+    <img class="avatar" src="https://blog.hgaard.com/images/avatar.png">
     <div>
         <span class="dark">Jakob Højgaard</span>
         <span>Software developers swiss-army knife, father of three, brewer, rookie surfer</span>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.dk%2fsetting-up-my-new-mac%2f - Installing%20Windows%208.1%20on%20my%20mac by @hgaard"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.com%2fsetting-up-my-new-mac%2f - Installing%20Windows%208.1%20on%20my%20mac by @hgaard"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -222,15 +237,15 @@
     
     <p class="small">
     
-        © Copyright 2020 Jakob Højgaard
+        © Copyright 2021 Jakob Højgaard
     
     </p>
 </footer>
 
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://blog.hgaard.dk/js/main.js"></script>
-<script src="https://blog.hgaard.dk/js/highlight.js"></script>
+<script src="https://blog.hgaard.com/js/main.js"></script>
+<script src="https://blog.hgaard.com/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 

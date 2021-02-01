@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Opinion on The Bearded Code Monkey</title>
-    <link>https://blog.hgaard.dk/tags/opinion/</link>
-    <description>Recent content in Opinion on The Bearded Code Monkey</description>
+    <title>opinion on The Bearded Code Monkey</title>
+    <link>https://blog.hgaard.com/tags/opinion/</link>
+    <description>Recent content in opinion on The Bearded Code Monkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.hgaard.dk/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hgaard.com/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Avoid The Microservice Fallacy</title>
-      <link>https://blog.hgaard.dk/avoid-the-microservice-fallacy/</link>
+      <link>https://blog.hgaard.com/avoid-the-microservice-fallacy/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.hgaard.dk/avoid-the-microservice-fallacy/</guid>
+      <guid>https://blog.hgaard.com/avoid-the-microservice-fallacy/</guid>
       <description>Last year I had the pleasure of speaking at the DDD conference here in Brisbane. It was a really good experience and I enjoyed doing the talk a lot. One of the great things about the DDD conference is the engagement of the audience and community and thus the amount of feedback you get as a speaker. A lot of the comments I got were really positive which I obviously appreciate immensely.</description>
     </item>
     

@@ -1,4 +1,4 @@
-baseurl = "https://blog.hgaard.dk/"
+baseurl = "https://blog.hgaard.com/"
 languageCode = "en-US"
 title = "The Bearded Code Monkey"
 themesDir = "themes"
@@ -27,7 +27,7 @@ paginate = 6
 
 	# Nav
 	enableResume = true
-	resumeLink = "https://resume.hgaard.dk"
+	resumeLink = "https://resume.hgaard.com"
 	aboutLink = "/about"
 
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by

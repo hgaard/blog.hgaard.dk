@@ -6,19 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Jakob Højgaard">
 <meta name="description" content="Code and things related">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>You should use git even though you can&#39;t</title>
-<link rel="shortcut icon" href="https://blog.hgaard.dk/images/favicon.ico">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/style.css">
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/highlight.css">
+<link rel="shortcut icon" href="https://blog.hgaard.com/images/favicon.ico">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/style.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/highlight.css">
 
 
 
-<link rel="stylesheet" href="https://blog.hgaard.dk/css/monosocialiconsfont.css">
+<link rel="stylesheet" href="https://blog.hgaard.com/css/monosocialiconsfont.css">
 
 
 
-<link href="https://blog.hgaard.dk/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
+<link href="https://blog.hgaard.com/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
 
 
 <meta property="og:title" content="You should use git even though you can&#39;t" />
@@ -26,20 +26,17 @@
 Even though you can&rsquo;t always control the infrastructure of your workplace, it doesn&rsquo;t need to be an excuse to stick with suboptimal tools to do your job. You are better than that!
 My main gripe with TFS (or any centralized source control system that I know of) is the branching story." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.hgaard.dk/you-should-use-git-even-thoug-you-cant/" />
-<meta property="article:published_time" content="2018-01-23T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-23T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="https://blog.hgaard.com/you-should-use-git-even-thoug-you-cant/" />
+<meta property="article:published_time" content="2018-01-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-23T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="You should use git even though you can&#39;t">
 <meta itemprop="description" content="Why As a consultant, I sometimes work with clients that aren&rsquo;t using the best source control software that is currently available. This sometimes means that git is not the preferred tool for source control.
 Even though you can&rsquo;t always control the infrastructure of your workplace, it doesn&rsquo;t need to be an excuse to stick with suboptimal tools to do your job. You are better than that!
 My main gripe with TFS (or any centralized source control system that I know of) is the branching story.">
-
-
-<meta itemprop="datePublished" content="2018-01-23T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-01-23T00:00:00&#43;00:00" />
+<meta itemprop="datePublished" content="2018-01-23T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-01-23T00:00:00+00:00" />
 <meta itemprop="wordCount" content="1125">
 
 
@@ -58,19 +55,19 @@ My main gripe with TFS (or any centralized source control system that I know of)
 <body>
     <nav class="main-nav">
 	
-		<a href='https://blog.hgaard.dk/'> <span class="arrow">←</span>Home</a>
+		<a href='https://blog.hgaard.com/'> <span class="arrow">←</span>Home</a>
 	
 	
 	
 	<a href="/about">About</a>
 
-	<a href="https://resume.hgaard.dk">Resume</a>
+	<a href="https://resume.hgaard.com">Resume</a>
 	
 
 	
 
 	
-		<a class="cta" href="https://blog.hgaard.dk/index.xml">Subscribe</a>
+		<a class="cta" href="https://blog.hgaard.com/index.xml">Subscribe</a>
 	
 </nav>
 
@@ -87,145 +84,78 @@ My main gripe with TFS (or any centralized source control system that I know of)
         
         
             
-                <a href="https://blog.hgaard.dk/tags/git">git</a>
+                <a href="https://blog.hgaard.com/tags/git">git</a>
             
-                <a href="https://blog.hgaard.dk/tags/versioncontrol">versioncontrol</a>
+                <a href="https://blog.hgaard.com/tags/versioncontrol">versioncontrol</a>
             
-                <a href="https://blog.hgaard.dk/tags/tfs">tfs</a>
+                <a href="https://blog.hgaard.com/tags/tfs">tfs</a>
             
         
         
         </h2>
     </header>
     <section id="post-body">
-        
-
-<h2 id="why">Why</h2>
-
+        <h2 id="why">Why</h2>
 <p>As a consultant, I sometimes work with clients that aren&rsquo;t using the best source control software that is currently available. This sometimes means that git is not the preferred tool for source control.</p>
-
 <p>Even though you can&rsquo;t always control the infrastructure of your workplace, it doesn&rsquo;t need to be an excuse to stick with suboptimal tools to do your job. You are better than that!</p>
-
 <p>My main gripe with TFS (or any centralized source control system that I know of) is the branching story. The lack of easy <em>local</em> branching (and later, sharing of these) really inhibits my typical workflow. The fact that a centrally-controlled server is the only possible way to create such a branch is a fundamental problem with TFS and it&rsquo;s tooling ecosystem, and cannot currently be solved without changing away from TFS. As a consequence, organisations that use TFS tend to treat the entire concept of a branch something that needs to be centrally controlled and managed.</p>
-
 <p>Another almost as severe problem is the lack of local history and the lack flexibility caused by that. I guess I&rsquo;m just no longer comfortable not being able to commit many times a day without having to think about how I might disturb my teammates.</p>
-
 <p>Luckily there is actually a tool to bridge this. Enter <a href="http://git-tfs.com/">git-tfs</a></p>
-
 <h2 id="what">What</h2>
-
 <p>Well as the name implies it&rsquo;s a git to TFS and TFS to git bridge. Which kinda makes it possible for you to work with regular git locally and &ldquo;just&rdquo; have TFS acts as your remote repository. There are a few caveats to be aware of and I have outlined some at the end of this post.</p>
-
 <h2 id="how">How</h2>
-
 <p>First of all, you need to install git-tfs. Follow the instructions <a href="https://github.com/git-tfs/git-tfs">Here</a>. I usually use <a href="https://chocolatey.org/">Chocolatey</a> to install my development dependencies if possible. You can also just download the binary. An important detail is to remember to add git-tfs.exe to your path.
 An important thing to note is that you need Team Explorer installed because git-tfs uses tf.exe to sync back to TFS. But if you are already using Visual Studio (not Visual Studio Code) you already have it installed.</p>
-
 <p>Next step, to clone a repo and start working with the code. There are a few ways to get started.</p>
-
 <ol>
 <li>Clone the whole history</li>
 <li>Quick clone</li>
 <li>Clone from specific changeset</li>
 </ol>
-
 <h3 id="clone-the-whole-history">Clone the whole history</h3>
-
 <p>This is a natural choice if you want to have the whole history locally, there are a few drawbacks though. First of all, if the repo already has a lot of history this process will take a long time, as in minutes to potentially hours.</p>
-
-<pre><code class="language-bash">git tfs clone http://tfs-server $/Repository/ProjectBranch
-</code></pre>
-
-<h3 id="quick-clone">Quick clone</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tfs clone http://tfs-server $/Repository/ProjectBranch
+</code></pre></div><h3 id="quick-clone">Quick clone</h3>
 <p>If you don&rsquo;t want to wait that long and can live without previous history, just quick clone. This will essentially just get latest and initialize a git repo from there.</p>
-
-<pre><code class="language-bash">git tfs quick-clone http://tfs-server $/Repository/ProjectBranch
-</code></pre>
-
-<h3 id="clone-from-specific-changeset">Clone from specific changeset</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tfs quick-clone http://tfs-server $/Repository/ProjectBranch
+</code></pre></div><h3 id="clone-from-specific-changeset">Clone from specific changeset</h3>
 <p>Last options are somewhere in between. To clone from a specific changeset in TFS. And of course the longer back you go the longer time it will take</p>
-
-<pre><code class="language-bash">git tfs clone http://tfs-server $/Repository/ProjectBranch -c id-of-changeset
-</code></pre>
-
-<h3 id="working-with-the-repo">Working with the repo</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tfs clone http://tfs-server $/Repository/ProjectBranch -c id-of-changeset
+</code></pre></div><h3 id="working-with-the-repo">Working with the repo</h3>
 <p>After you have successfully cloned the repo, you can start working with the code in the repo just as if it was an ordinary git repo. That is just until you want to pull changes from the remote or push your changes back to the remote.</p>
-
 <h3 id="pulling-from-remote">Pulling from remote</h3>
-
 <p>This is almost like just plain git, just adding <code>tfs</code> after the <code>git</code> command. However, there is one thing to be aware of here. Since TFS keeps a linear history it is strongly encouraged to always pull changes with the <code>-r</code> or <code>--rebase</code> switch.</p>
-
-<pre><code class="language-bash">git tfs pull -r
-</code></pre>
-
-<h3 id="pushing-back-to-remote">Pushing back to remote</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tfs pull -r
+</code></pre></div><h3 id="pushing-back-to-remote">Pushing back to remote</h3>
 <p>The semantics here differ a bit from git semantics and aligns closer with TFS as the command (there are more ways to do this - but this is the way I prefer). The reason for this is that git-tfs has to replay any local changes against TFS as separate checkins, thus the command is called <code>rcheckin</code> or recursive checkin</p>
-
-<pre><code class="language-bash">git tfs rcheckin
-</code></pre>
-
-<h2 id="backup-of-local-repo">Backup of local repo</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tfs rcheckin
+</code></pre></div><h2 id="backup-of-local-repo">Backup of local repo</h2>
 <p>When it comes to source code I&rsquo;m very paranoid so having changes lying around on my local machine only, tend to freak me out quite fast. So I want to be able to backup my local changes without having to push my changes to the main branch. Luckily it&rsquo;s very easy to add multiple remotes to a git repo and it does not even have to be anything else than a disk drive. Since most of the places I work from have personal network drives mapped, this is an easy way to add a second remote and in most cases, a network drive will also be backed up. Now it might be tempting to use Dropbox, google drive or OneDrive for this, but remember if you working from a closed network this will can accidentally expose code publicly and you don&rsquo;t want to be the one responsible for that.</p>
-
 <h3 id="create-folder-on-network-drive-for-repos">Create folder on network drive for repos</h3>
-
 <p>In this case, my network drive is x:</p>
-
-<pre><code class="language-bash">x:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">x:
 mkdir repos
-</code></pre>
-
-<p>Create a folder for the project to &ldquo;host&rdquo;</p>
-
-<pre><code class="language-bash">mkdir my-project
-</code></pre>
-
-<p>Create new &ldquo;bear&rdquo; project</p>
-
-<pre><code class="language-bash">cd my-project
+</code></pre></div><p>Create a folder for the project to &ldquo;host&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir my-project
+</code></pre></div><p>Create new &ldquo;bear&rdquo; project</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd my-project
 git init —bare
-</code></pre>
-
-<p>Add the network folder as origin to the working repo</p>
-
-<pre><code class="language-bash">$ cd &lt;path to the working repo&gt;
-$ git remote add origin file://x:\Repos\my-project
-</code></pre>
-
-<p>Push to origin</p>
-
-<pre><code class="language-bash">$ git push -u origin master
-</code></pre>
-
-<p>One thing to note here is that if you are not very careful about ensuring a linear history locally (do rebase) pushing to a second remote can become difficult and can result in unexpected merge conflicts. But remember, this is a second remote, in this case, is just a backup and is not shared with anyone, thus you can safely force push and not care about the conflicts (I know one should never really need to force push).</p>
-
+</code></pre></div><p>Add the network folder as origin to the working repo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd &lt;path to the working repo&gt;
+$ git remote add origin file://x:<span style="color:#ae81ff">\R</span>epos<span style="color:#ae81ff">\m</span>y-project
+</code></pre></div><p>Push to origin</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git push -u origin master
+</code></pre></div><p>One thing to note here is that if you are not very careful about ensuring a linear history locally (do rebase) pushing to a second remote can become difficult and can result in unexpected merge conflicts. But remember, this is a second remote, in this case, is just a backup and is not shared with anyone, thus you can safely force push and not care about the conflicts (I know one should never really need to force push).</p>
 <h2 id="managing-branches">Managing branches</h2>
-
 <p>A last useful nugget is managing branches. Managing branches TFS have always felt a bit clunky to me and I have multiple times experienced code on one branch referencing code in a different project.</p>
-
 <p>With git-tfs, TFS branches can be managed locally as regular branches in git like this.</p>
-
 <p>First to find the branches to pull call <code>list-remote-branches</code>.</p>
-
 <pre><code>git tfs list-remote-branches  http://tfs-server
-</code></pre>
-
-<p>Pull a branch from TFS:</p>
-
-<pre><code class="language-bash">$ git tfs branch --init $/Repository/ProjectBranch
-</code></pre>
-
-<p>This will initialize a git branch with the name corresponding to the branch path in TFS.</p>
-
+</code></pre><p>Pull a branch from TFS:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git tfs branch --init $/Repository/ProjectBranch
+</code></pre></div><p>This will initialize a git branch with the name corresponding to the branch path in TFS.</p>
 <p>Well, off you go now. Do it!</p>
-
 <h2 id="caveats">Caveats</h2>
-
 <ul>
 <li>Pushing to extra remote can be problematic</li>
 <li>Always always use rebase - after all TFS only have one branch</li>
@@ -239,14 +169,14 @@ $ git remote add origin file://x:\Repos\my-project
 
 <footer id="post-meta" class="clearfix">
     <a href="https://twitter.com/hgaard">
-    <img class="avatar" src="https://blog.hgaard.dk/images/avatar.png">
+    <img class="avatar" src="https://blog.hgaard.com/images/avatar.png">
     <div>
         <span class="dark">Jakob Højgaard</span>
         <span>Software developers swiss-army knife, father of three, brewer, rookie surfer</span>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.dk%2fyou-should-use-git-even-thoug-you-cant%2f - You%20should%20use%20git%20even%20though%20you%20can%27t by @hgaard"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.com%2fyou-should-use-git-even-thoug-you-cant%2f - You%20should%20use%20git%20even%20though%20you%20can%27t by @hgaard"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -344,15 +274,15 @@ $ git remote add origin file://x:\Repos\my-project
     
     <p class="small">
     
-        © Copyright 2020 Jakob Højgaard
+        © Copyright 2021 Jakob Højgaard
     
     </p>
 </footer>
 
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://blog.hgaard.dk/js/main.js"></script>
-<script src="https://blog.hgaard.dk/js/highlight.js"></script>
+<script src="https://blog.hgaard.com/js/main.js"></script>
+<script src="https://blog.hgaard.com/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 
