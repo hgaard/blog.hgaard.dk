@@ -42,8 +42,8 @@ pagerSize = 6
 [params]
   # Site Author
   author = "Jakob Højgaard"
-  # Author biography
-  bio = "The Bearded Code Monkey"
+  # Author biography (shown below title on homepage)
+  bio = "Code and things related"
   # Site Description
   description = "Code and things related"
 
