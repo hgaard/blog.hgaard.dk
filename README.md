@@ -1,12 +1,12 @@
 # blog.hgaard.dk
 
-A personal blog built with Hugo static site generator, featuring the minimalistic Cactus theme.
+A personal blog built with Hugo static site generator, featuring the minimalistic Mini theme.
 
 ## Overview
 
 - **URL**: <https://blog.hgaard.com/>
 - **Generator**: Hugo v0.151.0+
-- **Theme**: hugo-cactus-theme (vendored)
+- **Theme**: [hugo-theme-mini](https://github.com/nodejh/hugo-theme-mini) (actively maintained)
 - **Deployment**: GitHub Pages (output to `/docs` directory)
 
 ## Prerequisites
@@ -112,24 +112,25 @@ hugo --gc --cleanDestinationDir
 Site configuration is managed in [config.toml](config.toml):
 
 - **Site settings**: Title, base URL, language
-- **Theme settings**: Colors, fonts, social icons
+- **Theme settings**: Colors, syntax highlighting
 - **Navigation**: Menu items, about/resume links
 - **Analytics**: Google Analytics, Disqus comments
-- **Social links**: Twitter, GitHub, LinkedIn, Instagram
+- **Social links**: Twitter, GitHub, LinkedIn (supported: GitHub, Twitter, LinkedIn, Facebook, StackOverflow)
 
 ## Theme Customization
 
-The theme is vendored in `themes/hugo-cactus-theme/`. Key customization points:
+The Mini theme is installed as a git submodule in `themes/mini/`. Key customization points:
 
-- **Layouts**: `themes/hugo-cactus-theme/layouts/`
-- **CSS**: `themes/hugo-cactus-theme/static/css/`
-- **Images**: `themes/hugo-cactus-theme/static/images/`
+- **Configuration**: All theme settings in [config.toml](config.toml)
+- **Custom CSS/JS**: Use `customCSS` and `customJS` parameters
+- **Layouts**: Override by creating matching files in root `layouts/` directory
+- **Theme Repository**: <https://github.com/nodejh/hugo-theme-mini>
 
-To customize the site appearance, you can:
+To customize the site appearance:
 
-1. Override theme files by creating matching files in the root `layouts/` directory
-2. Add custom CSS in the theme's CSS directory
-3. Use `customCSS` parameter in config.toml
+1. Add custom CSS files to `static/css/` and reference in `config.toml`
+2. Override theme layouts by creating matching files in root `layouts/` directory
+3. Modify `config.toml` for colors, navigation, and features
 
 ## Deployment
 
@@ -191,22 +192,24 @@ If you encounter build errors after updating Hugo:
 
 ### Theme Issues
 
-The hugo-cactus-theme has been updated for Hugo v0.151.0 compatibility. If you encounter issues:
+The Mini theme has been updated for Hugo v0.151.0 compatibility. If you encounter issues:
 
 1. Ensure you're using Hugo v0.151.0 or later
-2. Check for deprecated template functions
+2. Update the theme submodule: `git submodule update --remote themes/mini`
 3. Review the [Hugo documentation](https://gohugo.io/documentation/)
 
 ## Maintenance Notes
 
-- **Theme Status**: The original hugo-cactus-theme is archived (no longer maintained since 2020). The vendored copy has been updated for modern Hugo compatibility.
+- **Theme Status**: Using hugo-theme-mini, actively maintained as of 2024-2025
+- **Theme Update**: Update via `git submodule update --remote themes/mini`
 - **Hugo Version**: Keep Hugo updated via `brew upgrade hugo`
 - **Dependencies**: This project has no external dependencies beyond Hugo itself
+- **Old Theme**: The original hugo-cactus-theme has been replaced. Backup available in `config.toml.backup`
 
 ## Resources
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
-- [Hugo Cactus Theme](https://github.com/digitalcraftsman/hugo-cactus-theme)
+- [Hugo Theme Mini](https://github.com/nodejh/hugo-theme-mini)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 ## License

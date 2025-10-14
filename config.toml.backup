@@ -1,0 +1,70 @@
+baseurl = "https://blog.hgaard.com/"
+languageCode = "en-US"
+title = "The Bearded Code Monkey"
+themesDir = "themes"
+
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-4800839-2"
+# Disable comments by leaving disqusShortname empty
+disqusShortname = "hgaard"
+publishDir = "docs"
+
+# Pagination
+[pagination]
+pagerSize = 6
+
+[permalinks]
+  post = "/:slug/"
+  blog = "/:slug/"
+
+[params]
+	name = "Jakob Højgaard"
+	description = "Code and things related"
+	bio = "The Bearded Code Monkey"
+	# Enter optionally your twitter account
+	twitter = "hgaard"
+	enableRSS = true
+
+	# Nav
+	enableResume = true
+	resumeLink = "https://resume.hgaard.com"
+	aboutLink = "/about"
+
+	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
+	# linking local files with their path relatigiove to the static folder, e.g. "css/styles.css"
+	customCSS = []
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	subscribe = ""
+
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "Software developers swiss-army knife, father of three, brewer, rookie surfer"
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "mono-social"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = "rounded"
+
+	# Add additional social link entries underneath
+	[params.Social]
+		twitter  = "https://www.twitter.com/hgaard"
+		github   = "https://www.github.com/hgaard"
+		linkedin = "https://www.linkedin.com/in/jakobhojgaard/"
+		instagram = "https://www.instagram.com/hgaard/"
+
