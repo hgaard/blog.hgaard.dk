@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tfs on The Bearded Code Monkey</title>
-    <link>https://blog.hgaard.com/categories/tfs/</link>
-    <description>Recent content in tfs on The Bearded Code Monkey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hgaard.com/categories/tfs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>You should use git even though you can&#39;t</title>
-      <link>https://blog.hgaard.com/you-should-use-git-even-thoug-you-cant/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.hgaard.com/you-should-use-git-even-thoug-you-cant/</guid>
-      <description>Why As a consultant, I sometimes work with clients that aren&amp;rsquo;t using the best source control software that is currently available. This sometimes means that git is not the preferred tool for source control.
-Even though you can&amp;rsquo;t always control the infrastructure of your workplace, it doesn&amp;rsquo;t need to be an excuse to stick with suboptimal tools to do your job. You are better than that!
-My main gripe with TFS (or any centralized source control system that I know of) is the branching story.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tfs on The Bearded Code Monkey</title><link>https://blog.hgaard.com/categories/tfs/</link><description>Recent content in Tfs on The Bearded Code Monkey</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hgaard.com/categories/tfs/index.xml" rel="self" type="application/rss+xml"/><item><title>You should use git even though you can't</title><link>https://blog.hgaard.com/you-should-use-git-even-thoug-you-cant/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://blog.hgaard.com/you-should-use-git-even-thoug-you-cant/</guid><description>&lt;h2 id="why"&gt;Why&lt;/h2&gt;
+&lt;p&gt;As a consultant, I sometimes work with clients that aren&amp;rsquo;t using the best source control software that is currently available. This sometimes means that git is not the preferred tool for source control.&lt;/p&gt;
+&lt;p&gt;Even though you can&amp;rsquo;t always control the infrastructure of your workplace, it doesn&amp;rsquo;t need to be an excuse to stick with suboptimal tools to do your job. You are better than that!&lt;/p&gt;
+&lt;p&gt;My main gripe with TFS (or any centralized source control system that I know of) is the branching story. The lack of easy &lt;em&gt;local&lt;/em&gt; branching (and later, sharing of these) really inhibits my typical workflow. The fact that a centrally-controlled server is the only possible way to create such a branch is a fundamental problem with TFS and it&amp;rsquo;s tooling ecosystem, and cannot currently be solved without changing away from TFS. As a consequence, organisations that use TFS tend to treat the entire concept of a branch something that needs to be centrally controlled and managed.&lt;/p&gt;</description></item></channel></rss>

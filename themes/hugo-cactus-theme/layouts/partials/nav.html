@@ -14,6 +14,8 @@
   	{{ end }}
 
 	{{ if .Site.Params.enableRSS }}
-		<a class="cta" href="{{ .Site.RSSLink }}">{{ .Site.Params.subscribe | default "Subscribe" }}</a>
+		{{ with .Site.Home.OutputFormats.Get "RSS" }}
+		<a class="cta" href="{{ .RelPermalink }}">{{ $.Site.Params.subscribe | default "Subscribe" }}</a>
+		{{ end }}
 	{{ end }}
 </nav>

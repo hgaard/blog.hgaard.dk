@@ -11,7 +11,8 @@ disqusShortname = "hgaard"
 publishDir = "docs"
 
 # Pagination
-paginate = 6
+[pagination]
+pagerSize = 6
 
 [permalinks]
   post = "/:slug/"
@@ -60,10 +61,10 @@ paginate = 6
     # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
     socialIconStyle = "rounded"
 
-# Add additional social link entries underneath
-[social]
-    twitter  = "https://www.twitter.com/hgaard"
-    github   = "https://www.github.com/hgaard"
-	linkedin = "https://www.linkedin.com/in/jakobhojgaard/"
-	instagram = "https://www.instagram.com/hgaard/"
+	# Add additional social link entries underneath
+	[params.Social]
+		twitter  = "https://www.twitter.com/hgaard"
+		github   = "https://www.github.com/hgaard"
+		linkedin = "https://www.linkedin.com/in/jakobhojgaard/"
+		instagram = "https://www.instagram.com/hgaard/"
 

@@ -1,107 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Jakob Højgaard">
-<meta name="description" content="Code and things related">
-<meta name="generator" content="Hugo 0.80.0" />
-<title>Setting up a difftool for git on windows</title>
-<link rel="shortcut icon" href="https://blog.hgaard.com/images/favicon.ico">
-<link rel="stylesheet" href="https://blog.hgaard.com/css/style.css">
-<link rel="stylesheet" href="https://blog.hgaard.com/css/highlight.css">
-
-
-
-<link rel="stylesheet" href="https://blog.hgaard.com/css/monosocialiconsfont.css">
-
-
-
-<link href="https://blog.hgaard.com/index.xml" rel="alternate" type="application/rss+xml" title="The Bearded Code Monkey" />
-
-
-<meta property="og:title" content="Setting up a difftool for git on windows" />
-<meta property="og:description" content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
-Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.hgaard.com/setting-up-a-difftool-for-git-on-windows/" />
-<meta property="article:published_time" content="2014-10-01T12:00:00+00:00" />
-<meta property="article:modified_time" content="2014-10-01T12:00:00+00:00" />
-
-
-<meta itemprop="name" content="Setting up a difftool for git on windows">
-<meta itemprop="description" content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
-Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools.">
-<meta itemprop="datePublished" content="2014-10-01T12:00:00+00:00" />
-<meta itemprop="dateModified" content="2014-10-01T12:00:00+00:00" />
-<meta itemprop="wordCount" content="222">
-
-
-
-<meta itemprop="keywords" content="" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Setting up a difftool for git on windows"/>
-<meta name="twitter:description" content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
-Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools."/>
-<meta name="twitter:site" content="@https://www.twitter.com/hgaard"/>
-
-
-    </head>
-<body>
-    <nav class="main-nav">
-	
-		<a href='https://blog.hgaard.com/'> <span class="arrow">←</span>Home</a>
-	
-	
-	
-	<a href="/about">About</a>
-
-	<a href="https://resume.hgaard.com">Resume</a>
-	
-
-	
-
-	
-		<a class="cta" href="https://blog.hgaard.com/index.xml">Subscribe</a>
-	
-</nav>
-
-    <section id="wrapper">
-        
-        
-<article class="post">
-    <header>
-        <h1>Setting up a difftool for git on windows</h1>
-        <h2 class="subtitle"></h2>
-        <h2 class="headline">
-        October 1, 2014
-        <br>
-        
-        </h2>
-    </header>
-    <section id="post-body">
-        <p>Well i have been using <a href="https://sourcegear.com/diffmerge/">DiffMerge</a> from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.</p>
-<h3 id="installation">Installation</h3>
-<p>I installed with <a href="http://chocolatey.org/">Chocolatey</a> (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools. In fact i maintain a script on github with all the tools I use, so if you haven&rsquo;t used Chocolatey for application installation, now&rsquo;s your chance.</p>
-<p><code>choco install diffmerge</code></p>
-<h3 id="configuraion">Configuraion</h3>
-<p>The following <a href="https://sourcegear.com/diffmerge/webhelp/sec__git__windows__msysgit.html">Guide</a> is just copied from SourceGear and works at least for version 4.2.x</p>
-<p>For diff:</p>
-<pre><code>git config --global diff.tool diffmerge
+<!doctype html><html lang=en-US><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Jakob Højgaard"><meta name=description content="Code and things related"><meta name=generator content="Hugo 0.151.0"><title>Setting up a difftool for git on windows</title><link rel="shortcut icon" href=https://blog.hgaard.com/images/favicon.ico><link rel=stylesheet href=https://blog.hgaard.com/css/style.css><link rel=stylesheet href=https://blog.hgaard.com/css/highlight.css><link rel=stylesheet href=https://blog.hgaard.com/css/monosocialiconsfont.css><link href=/index.xml rel=alternate type=application/rss+xml title="The Bearded Code Monkey"><meta property="og:url" content="https://blog.hgaard.com/setting-up-a-difftool-for-git-on-windows/"><meta property="og:site_name" content="The Bearded Code Monkey"><meta property="og:title" content="Setting up a difftool for git on windows"><meta property="og:description" content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
+Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools. In fact i maintain a script on github with all the tools I use, so if you haven’t used Chocolatey for application installation, now’s your chance."><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="article:section" content="blog"><meta property="article:published_time" content="2014-10-01T12:00:00+00:00"><meta property="article:modified_time" content="2014-10-01T12:00:00+00:00"><meta itemprop=name content="Setting up a difftool for git on windows"><meta itemprop=description content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
+Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools. In fact i maintain a script on github with all the tools I use, so if you haven’t used Chocolatey for application installation, now’s your chance."><meta itemprop=datePublished content="2014-10-01T12:00:00+00:00"><meta itemprop=dateModified content="2014-10-01T12:00:00+00:00"><meta itemprop=wordCount content="222"><meta name=twitter:card content="summary"><meta name=twitter:title content="Setting up a difftool for git on windows"><meta name=twitter:description content="Well i have been using DiffMerge from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.
+Installation I installed with Chocolatey (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools. In fact i maintain a script on github with all the tools I use, so if you haven’t used Chocolatey for application installation, now’s your chance."><meta name=twitter:site content="@https://www.twitter.com/hgaard"></head><body><nav class=main-nav><a href=https://blog.hgaard.com/><span class=arrow>←</span>Home</a>
+<a href=/about>About</a>
+<a href=https://resume.hgaard.com>Resume</a>
+<a class=cta href=/index.xml>Subscribe</a></nav><section id=wrapper><article class=post><header><h1>Setting up a difftool for git on windows</h1><h2 class=subtitle></h2><h2 class=headline>October 1, 2014<br></h2></header><section id=post-body><p>Well i have been using <a href=https://sourcegear.com/diffmerge/>DiffMerge</a> from SourceGear as the default diff tool in Visual Studio for quite a few years now. I use git more and more now but I never took the time to add a diff tool to the git configuration. But since i recently got a new dev machine I thought i might just set that up as well.</p><h3 id=installation>Installation</h3><p>I installed with <a href=http://chocolatey.org/>Chocolatey</a> (remember to run cmd og PowerShell as admin) which i use to manage most of my dev tools. In fact i maintain a script on github with all the tools I use, so if you haven&rsquo;t used Chocolatey for application installation, now&rsquo;s your chance.</p><p><code>choco install diffmerge</code></p><h3 id=configuraion>Configuraion</h3><p>The following <a href=https://sourcegear.com/diffmerge/webhelp/sec__git__windows__msysgit.html>Guide</a> is just copied from SourceGear and works at least for version 4.2.x</p><p>For diff:</p><pre><code>git config --global diff.tool diffmerge
 
 git config --global difftool.diffmerge.cmd &quot;C:/Program\ Files/SourceGear/Common/DiffMerge/sgdm.exe `$LOCAL `$REMOTE&quot;
-</code></pre>
-<p>For merge:</p>
-<pre><code>git config --global merge.tool diffmerge
+</code></pre><p>For merge:</p><pre><code>git config --global merge.tool diffmerge
 
 git config --global mergetool.diffmerge.trustExitCode true
 
 git config --global mergetool.diffmerge.cmd &quot;C:/Program\ Files/SourceGear/Common/DiffMerge/sgdm.exe /merge /result=`$MERGED `$LOCAL `$BASE `$REMOTE\&quot;
-</code></pre>
-<p>Well of course you can also just edit the .gitconfig and add the settings directly into it. That would look something like this.</p>
-<pre><code>[diff]
+</code></pre><p>Well of course you can also just edit the .gitconfig and add the settings directly into it. That would look something like this.</p><pre><code>[diff]
     tool = diffmerge
 [difftool &quot;diffmerge&quot;]
     cmd = &quot;C:/Program\ Files/SourceGear/Common/DiffMerge/sgdm.exe $LOCAL $REMOTE&quot;
@@ -110,145 +21,9 @@ git config --global mergetool.diffmerge.cmd &quot;C:/Program\ Files/SourceGear/C
 [mergetool &quot;diffmerge&quot;]
     trustExitCode = true
     cmd = &quot;C:/Program\ Files/SourceGear/Common/DiffMerge/sgdm.exe /merge /result=$MERGED $LOCAL $BASE $REMOTE&quot;
-</code></pre>
-
-    </section>
-</article>
-
-<footer id="post-meta" class="clearfix">
-    <a href="https://twitter.com/hgaard">
-    <img class="avatar" src="https://blog.hgaard.com/images/avatar.png">
-    <div>
-        <span class="dark">Jakob Højgaard</span>
-        <span>Software developers swiss-army knife, father of three, brewer, rookie surfer</span>
-    </div>
-    </a>
-    <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.com%2fsetting-up-a-difftool-for-git-on-windows%2f - Setting%20up%20a%20difftool%20for%20git%20on%20windows by @hgaard"><span class="icon-twitter"> tweet</span></a>
-
-<a class="facebook" href="#" onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-      'facebook-share-dialog',
-      'width=626,height=436');
-    return false;"><span class="icon-facebook-rect"> Share</span>
-</a>
-
-    </section>
-</footer>
-
-<div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hgaard" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-<ul id="post-list" class="archive readmore">
-    <h3>Read more</h3>
-
-    
-    
-    
-        <li>
-            <a href="/3-awesome-podcasts/">3 awesome podcast episodes<aside class="dates">Feb 13 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/avoid-the-microservice-fallacy/">Avoid The Microservice Fallacy<aside class="dates">Feb 5 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/you-should-use-git-even-thoug-you-cant/">You should use git even though you can&#39;t<aside class="dates">Jan 23 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/doinng-stuff-with-rethinkdb/">Doing stuff with RethinkDB<aside class="dates">Aug 4 2016</aside></a>
-        </li>
-    
-        <li>
-            <a href="/managing-external-users-with-azure-ad-b2c/">Managing external users with Azure AD B2C<aside class="dates">Apr 21 2016</aside></a>
-        </li>
-    
-        <li>
-            <a href="/setting-up-this-blog/">Setting up this blog<aside class="dates">Nov 12 2015</aside></a>
-        </li>
-    
-</ul>
-
-
-
-        <footer id="footer">
-    
-        <div id="social">
-
-	
-	
-    
-    <a class="symbol" href="https://www.github.com/hgaard">
-        roundedgithub
-    </a>
-    
-    <a class="symbol" href="https://www.instagram.com/hgaard/">
-        roundedinstagram
-    </a>
-    
-    <a class="symbol" href="https://www.linkedin.com/in/jakobhojgaard/">
-        roundedlinkedin
-    </a>
-    
-    <a class="symbol" href="https://www.twitter.com/hgaard">
-        roundedtwitterbird
-    </a>
-    
-
-
-</div>
-
-    
-    <p class="small">
-    
-        © Copyright 2021 Jakob Højgaard
-    
-    </p>
-</footer>
-
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://blog.hgaard.com/js/main.js"></script>
-<script src="https://blog.hgaard.com/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-4800839-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-
-</body>
-</html>
+</code></pre></section></article><footer id=post-meta class=clearfix><a href=https://twitter.com/hgaard><img class=avatar src=https://blog.hgaard.com/images/avatar.png><div><span class=dark>Jakob Højgaard</span>
+<span>Software developers swiss-army knife, father of three, brewer, rookie surfer</span></div></a><section id=sharing><a class=twitter href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.hgaard.com%2fsetting-up-a-difftool-for-git-on-windows%2f - Setting%20up%20a%20difftool%20for%20git%20on%20windows by @hgaard"><span class=icon-twitter>tweet</span></a>
+<a class=facebook href=# onclick='return window.open("https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(location.href),"facebook-share-dialog","width=626,height=436"),!1'><span class=icon-facebook-rect>Share</span></a></section></footer><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hgaard.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><ul id=post-list class="archive readmore"><h3>Read more</h3><li><a href=/3-awesome-podcasts/>3 awesome podcast episodes<aside class=dates>Feb 13 2018</aside></a></li><li><a href=/avoid-the-microservice-fallacy/>Avoid The Microservice Fallacy<aside class=dates>Feb 5 2018</aside></a></li><li><a href=/you-should-use-git-even-thoug-you-cant/>You should use git even though you can't<aside class=dates>Jan 23 2018</aside></a></li><li><a href=/doinng-stuff-with-rethinkdb/>Doing stuff with RethinkDB<aside class=dates>Aug 4 2016</aside></a></li><li><a href=/managing-external-users-with-azure-ad-b2c/>Managing external users with Azure AD B2C<aside class=dates>Apr 21 2016</aside></a></li><li><a href=/setting-up-this-blog/>Setting up this blog<aside class=dates>Nov 12 2015</aside></a></li></ul><footer id=footer><div id=social><a class=symbol href=https://www.github.com/hgaard>roundedgithub
+</a><a class=symbol href=https://www.instagram.com/hgaard/>roundedinstagram
+</a><a class=symbol href=https://www.linkedin.com/in/jakobhojgaard/>roundedlinkedin
+</a><a class=symbol href=https://www.twitter.com/hgaard>roundedtwitterbird</a></div><p class=small>© Copyright 2025 Jakob Højgaard</p></footer></section><script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js></script><script src=https://blog.hgaard.com/js/main.js></script><script src=https://blog.hgaard.com/js/highlight.js></script><script>hljs.initHighlightingOnLoad()</script></body></html>
