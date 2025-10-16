@@ -9,14 +9,4 @@ title = "About"
 
 +++
 
-I am a Danish full stack software engineer and architect with
-15y+ experience. I do web, security cross-platform mobile development
-and everything in-between. I am known to be a person who challenges
-the well-known with a positive mind, both when it comes to building
-solutions, improving the development process and choosing platform,
-language or technology. I am inspired by functional programming languages,
-which is reflected in my approach to programming and I strive
-to become a polyglot developer. Privately I am a father of two boys and a
-girl and married to a sociologist doing UX Research. We live in Brisbane,
-but are often found hanging out on the local beaches trying to surf and
-play with our kids.
+As a seasoned technologist and senior technology leader, Jakob has held pivotal roles such as Chief Information Officer (CIO) and Chief Technology Officer (CTO), bringing over two decades of experience across diverse industries, including healthcare, government, security, and financial services. With an international career spanning Europe and Oceania, with a global perspective on technology management and innovation. In Jakob’s current role as CIO, he oversees the development and management of a Customer Relationship Management (CRM) and loan origination platform for the largest group of finance brokers in Australia and New Zealand. This platform supports over 6,000 brokers and advisers, partnering with more than 60 banks and lenders. Throughout Jakob’s career, he has operated at various levels of technology management, from hands-on development to executive leadership. Jakob’s passionate about building products that delight customers and is committed to developing high-performing technology organisations that drive business success.
