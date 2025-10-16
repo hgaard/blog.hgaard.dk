@@ -63,7 +63,7 @@ pagerSize = 6
   aboutAuthor = "Software developers swiss-army knife, father of three, brewer, rookie surfer"
 
   # Custom CSS and JS
-  customCSS = []
+  customCSS = ["css/custom.css"]
   customJS = []
 
   # Social links in footer

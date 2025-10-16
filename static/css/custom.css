@@ -1,0 +1,19 @@
+/* Featured/Header Image Styling */
+.featured-image {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .featured-image {
+        margin: 1rem 0 1.5rem 0;
+    }
+}
