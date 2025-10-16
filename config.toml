@@ -74,10 +74,7 @@ pagerSize = 6
     linkedin = "https://www.linkedin.com/in/jakobhojgaard/"
 
   # Extra navigation links
-  [[params.links]]
-    name = "About"
-    path = "/about"
-
+  # Note: About is already included in theme's default navigation
   [[params.links]]
     name = "Resume"
     path = "https://resume.hgaard.com"
